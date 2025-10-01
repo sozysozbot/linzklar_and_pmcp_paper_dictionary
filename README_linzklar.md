@@ -20,7 +20,7 @@
 - main_indexes.txt の行に書いてある名前で `entries_*.tsv` を作る
 - `entries_*.tsv` に書く
 - ビルドには柱見出しの情報が必要なので、`GUIDE_WIRDS_*.json` にダミーとして一旦 `{}` とか書いておく
-- `node build.js` により、`vivliostyle/*.html` を作る
+- `node build_linzklar.js` により、`vivliostyle/*.html` を作る
 - `cd vivliostyle; npx vivliostyle build -m` により、`言将机戦人等定引之字言集.pdf` が出来上がる。トリムマークが要らないなら `-m` を削る。
 - 満足したら、柱見出しを手動で割り当てるために `GUIDE_WORDS_*.json` を編集し、ビルド作業をもう一度行う
 
@@ -56,4 +56,4 @@
 
 その複数回の定義の内容が全て一致しているか、どれかの文字について掲載漏れがないか、自動的に調べるクロスチェック機能を実装してある。
 
-`node cross_check.js` をすると、定義が一致しているか確認されるとともに、掲載漏れの一覧が `cross_check.jsonl` に出力される。
+`node cross_check_linzklar.js` をすると、定義が一致しているか確認されるとともに、掲載漏れの一覧が `cross_check.jsonl` に出力される。
