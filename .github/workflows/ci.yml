@@ -86,7 +86,7 @@ jobs:
         shell: cmd
 
       - name: アーティファクトとして PDF を保存
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: pdf-output
           path: 言将机戦人等_網別_清字_島言_言書.pdf
