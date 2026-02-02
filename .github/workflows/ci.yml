@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, 4percent_abridged ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, 4percent_abridged ]
 
 jobs:
   build:
