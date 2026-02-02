@@ -217,7 +217,7 @@ ${Object.entries(guide_words).map(([key, value]) => `    @page:nth(${key}) {
     }
 `).join('\n')}</style>
 
-<header><img src="./${行}_見出し.svg" style="width: 100%"></header>
+
 
 
 ${entries.join('\n\n')}
@@ -225,12 +225,4 @@ ${entries.join('\n\n')}
 
 }
 
-build("ア", "5_01");
-build("カ", "5_02");
-build("サ", "5_03");
-build("タ", "5_04");
-build("ナ", "5_05");
 build("ハ", "5_06");
-build("マ", "5_07");
-build("ヤ", "5_08");
-build("ラ", "5_09");
