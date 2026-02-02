@@ -1,6 +1,5 @@
 import fs from 'fs';
 import { to_kana, from_latin } from 'pekzep_syllable';
-import { getPercentEncodedFileNameOfSection } from './gen_kana_index.js';
 
 const variant_table = fs.readFileSync("VARIANTS.tsv", { encoding: 'utf-8' })
     .trimEnd()
@@ -33,35 +32,10 @@ const idiomatic_multichar_pronunciation_table = fs.readFileSync("IDIOMATIC_MULTI
 let LINZKLARS_IN_ROUNDED = "";
 
 build("1_01_処");
-build("1_02_下");
-build("1_03_六");
-build("1_04_人");
-build("1_05_ナ而");
-build("1_06_一ノ");
-build("1_07_一？");
-build("1_08_上");
-build("1_09_二");
-build("1_10_右");
 build("1_11_言日");
-build("1_12_口");
-build("1_13_筆");
-build("1_14_門");
-build("1_15_函包箱");
-build("2_01_ノ一");
-build("2_02_常");
-build("2_03_ノノ");
 build("2_04_之");
-build("2_05_四");
 build("2_06_ヒクカ丹");
-build("2_07_天");
-build("2_08_火心");
 build("2_09_再");
-build("2_10_ヽヽ");
-build("2_11_反");
-build("2_12_フ");
-build("2_13_傾");
-build("2_14_針");
-build("2_15_神十位");
 
 {
     const glyphs = fs.readFileSync("non_dummy_glyph_list.json", { encoding: 'utf-8' });
@@ -209,7 +183,7 @@ function gen_entry({ linzklar: linzklar_, definitions, sentences }) {
 </div>
 
 <div class="entry">
-    <span class="redirect_to_char"><a href="${getPercentEncodedFileNameOfSection(o.dest)}.html#u${o.dest.codePointAt(0).toString(16).toLowerCase()}">⇒ p.</a>${o.src === o.dest ? "" : `<span class="target-linzklar">${o.dest}</span>`}</span>
+    <span class="redirect_to_char">⇒ p.${o.src === o.dest ? "" : `<span class="target-linzklar">${o.dest}</span>`}</span>
 </div>
 </div> <!-- .group-char-entry-with-the-following -->`;
     }
