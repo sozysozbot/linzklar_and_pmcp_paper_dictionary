@@ -68,7 +68,6 @@ const vivliostyleConfig = {
     '5_07_マ.html',
     '5_08_ヤ.html',
     '5_09_ラ.html',
-    '5_10_ワ.html',
 
     '6_00_appendix_index.html',
     '6_03_grammar_linzklar.html',
