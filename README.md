@@ -1,7 +1,7 @@
 # nclc_paper_dictionary
 日本机戦連盟 厳選燐字辞書・日本机戦連盟 厳選東島通商語辞書
 
-## 2025年6月版での構成
+## 4%版での構成
 
 - 表1（おもて表紙）
     - ある程度凝ったデザインで、【言将机戦人等 網別清字言書】「日本机戦連盟 厳選燐字辞書」｛nclc leti tectelit leti pmcp lukup cet｝「日本机戦連盟 厳選東島通商語辞書」が載っているべき
@@ -17,37 +17,7 @@
 - [この辞典の使い方（燐字辞書側）](./vivliostyle/0_10_how_to_use_linzklar.html)
 - [燐字辞書目次](./vivliostyle/0_99_linzklar_index.html)
 - 日本机戦連盟 厳選燐字辞書 本文
-    - [1_01_処](./vivliostyle/1_01_処.html)
-    - [1_02_下](./vivliostyle/1_02_下.html)
-    - [1_03_六](./vivliostyle/1_03_六.html)
-    - [1_04_人](./vivliostyle/1_04_人.html)
-    - [1_05_ナ而](./vivliostyle/1_05_ナ而.html)
-    - [1_06_一ノ](./vivliostyle/1_06_一ノ.html)
-    - [1_07_一？](./vivliostyle/1_07_一？.html)
-    - [1_08_上](./vivliostyle/1_08_上.html)
-    - [1_09_二](./vivliostyle/1_09_二.html)
-    - [1_10_右](./vivliostyle/1_10_右.html)
-    - [1_11_言日](./vivliostyle/1_11_言日.html)
-    - [1_12_口](./vivliostyle/1_12_口.html)
-    - [1_13_筆](./vivliostyle/1_13_筆.html)
-    - [1_14_門](./vivliostyle/1_14_門.html)
-    - [1_15_函包箱](./vivliostyle/1_15_函包箱.html)
-    - [2_01_ノ一](./vivliostyle/2_01_ノ一.html)
-    - [2_02_常](./vivliostyle/2_02_常.html)
-    - [2_03_ノノ](./vivliostyle/2_03_ノノ.html)
-    - [2_04_之](./vivliostyle/2_04_之.html)
-    - [2_05_四](./vivliostyle/2_05_四.html)
-    - [2_06_ヒクカ丹](./vivliostyle/2_06_ヒクカ丹.html)
-    - [2_07_天](./vivliostyle/2_07_天.html)
-    - [2_08_火心](./vivliostyle/2_08_火心.html)
-    - [2_09_再](./vivliostyle/2_09_再.html)
-    - [2_10_ヽヽ](./vivliostyle/2_10_ヽヽ.html)
-    - [2_11_反](./vivliostyle/2_11_反.html)
-    - [2_12_フ](./vivliostyle/2_12_フ.html)
-    - [2_13_傾](./vivliostyle/2_13_傾.html)
-    - [2_14_針](./vivliostyle/2_14_針.html)
-    - [2_15_神十位](./vivliostyle/2_15_神十位.html)
-    - [仮名索引](./vivliostyle/3_02_kana_index.html)
+    - [目四片_清字](./vivliostyle/目四片_清字.html)
 - [東島通商語タイトルページ](./vivliostyle/4_01_pmcp_start.html)
 - [この辞典の使い方（東島通商語辞書側）](./vivliostyle/4_02_how_to_use_pmcp.html)
 - [東島通商語辞書目次](./vivliostyle/4_99_pmcp_index.html)

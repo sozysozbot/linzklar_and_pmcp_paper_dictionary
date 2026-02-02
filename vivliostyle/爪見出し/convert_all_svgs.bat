@@ -1,6 +1,6 @@
 chcp 65001
-"C:\Program Files\Inkscape\bin\inkscape" --export-background-opacity=0 --export-width=4838 --export-type=png --export-filename="1_01_処_left.png" "1_01_処_left.svg"
-"C:\Program Files\Inkscape\bin\inkscape" --export-background-opacity=0 --export-width=4838 --export-type=png --export-filename="1_01_処_right.png" "1_01_処_right.svg"
+"C:\Program Files\Inkscape\bin\inkscape" --export-background-opacity=0 --export-width=4838 --export-type=png --export-filename="目四片_清字_left.png" "目四片_清字_left.svg"
+"C:\Program Files\Inkscape\bin\inkscape" --export-background-opacity=0 --export-width=4838 --export-type=png --export-filename="目四片_清字_right.png" "目四片_清字_right.svg"
 "C:\Program Files\Inkscape\bin\inkscape" --export-background-opacity=0 --export-width=4838 --export-type=png --export-filename="1_02_下_left.png" "1_02_下_left.svg"
 "C:\Program Files\Inkscape\bin\inkscape" --export-background-opacity=0 --export-width=4838 --export-type=png --export-filename="1_02_下_right.png" "1_02_下_right.svg"
 "C:\Program Files\Inkscape\bin\inkscape" --export-background-opacity=0 --export-width=4838 --export-type=png --export-filename="1_03_六_left.png" "1_03_六_left.svg"

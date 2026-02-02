@@ -23,9 +23,8 @@ const vivliostyleConfig = {
     '0_08_09_linzklar_start.html',
     '0_10_how_to_use_linzklar.html',
     '0_99_linzklar_index.html',
-    '1_01_処.html',
+    '目四片_清字.html',
 
-    '3_02_kana_index.html',
     '4_01_pmcp_start.html',
     '4_02_how_to_use_pmcp.html',
     '4_99_pmcp_index.html',
