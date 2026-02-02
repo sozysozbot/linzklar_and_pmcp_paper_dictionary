@@ -32,10 +32,6 @@ const idiomatic_multichar_pronunciation_table = fs.readFileSync("IDIOMATIC_MULTI
 let LINZKLARS_IN_ROUNDED = "";
 
 build("1_01_処");
-build("1_11_言日");
-build("2_04_之");
-build("2_06_ヒクカ丹");
-build("2_09_再");
 
 {
     const glyphs = fs.readFileSync("non_dummy_glyph_list.json", { encoding: 'utf-8' });

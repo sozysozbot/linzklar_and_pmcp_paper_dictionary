@@ -24,11 +24,6 @@ const vivliostyleConfig = {
     '0_10_how_to_use_linzklar.html',
     '0_99_linzklar_index.html',
     '1_01_処.html',
-    '1_11_言日.html',
-
-    '2_04_之.html',
-    '2_06_ヒクカ丹.html',
-    '2_09_再.html',
 
     '3_02_kana_index.html',
     '4_01_pmcp_start.html',
