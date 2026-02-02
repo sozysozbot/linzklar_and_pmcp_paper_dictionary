@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master, 4percent_abridged ]
+    branches: [ 4percent_abridged ]
   pull_request:
-    branches: [ master, 4percent_abridged ]
+    branches: [ 4percent_abridged ]
 
 jobs:
   build:
@@ -79,7 +79,7 @@ jobs:
 
       - name: PDF の存在確認とアーティファクト登録
         run: |
-          if not exist "言将机戦人等_網別_清字_島言_言書.pdf" (
+          if not exist "目四片_言将机戦人等_網別_清字_島言_言書.pdf" (
             echo PDF not found!
             exit /b 1
           )
@@ -89,5 +89,5 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: pdf-output
-          path: 言将机戦人等_網別_清字_島言_言書.pdf
+          path: 目四片_言将机戦人等_網別_清字_島言_言書.pdf
 

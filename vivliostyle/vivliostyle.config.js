@@ -48,7 +48,7 @@ const vivliostyleConfig = {
 
   ], // 'entry' can be 'string' or 'object' if there's only single markdown file
   // entryContext: './manuscripts', // default to '.' (relative to 'vivliostyle.config.js')
-  output: [ "../言将机戦人等_網別_清字_島言_言書.pdf" ] // path to generate draft file(s). default to '{title}.pdf'
+  output: [ "../目四片_言将机戦人等_網別_清字_島言_言書.pdf" ] // path to generate draft file(s). default to '{title}.pdf'
   //   './output.pdf', // the output format will be inferred from the name.
   //   {
   //     path: './book',
