@@ -7,9 +7,9 @@
    viewBox="0 0 125 177.734375"
    version="1.1"
    id="svg1"
-   sodipodi:docname="島_right.svg"
-   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
-   inkscape:export-filename="島_right.png"
+   sodipodi:docname="ハ_right.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   inkscape:export-filename="ハ_right.png"
    inkscape:export-xdpi="960"
    inkscape:export-ydpi="960"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="4.3455595"
-     inkscape:cx="458.51403"
-     inkscape:cy="314.45893"
-     inkscape:window-width="1280"
-     inkscape:window-height="729"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:zoom="3.0727746"
+     inkscape:cx="444.38665"
+     inkscape:cy="392.31644"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g312" />
+     inkscape:current-layer="g1" />
   <defs
      id="defs1">
     <rect
@@ -359,13 +359,6 @@
      transform="translate(115.35417,-3)">
     <g
        id="g1">
-      <rect
-         style="fill:#000000;stroke:none;stroke-width:0.199521;stroke-opacity:1;paint-order:fill markers stroke"
-         id="rect2"
-         width="9.9002113"
-         height="15.7046"
-         x="-0.25438133"
-         y="88.523506" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:6.98031px;line-height:0.5;font-family:'M+ 1p';-inkscape-font-specification:'M+ 1p Heavy';letter-spacing:0px;fill:#ffffff;stroke:none;stroke-width:1.19215;stroke-opacity:1;paint-order:fill markers stroke"
@@ -386,6 +379,51 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:xedixel;-inkscape-font-specification:xedixel;stroke-width:0.723"
            x="0.85397339"
            y="101.70396">p b h</tspan></text>
+      <rect
+         style="fill:#000000;stroke:none;stroke-width:0.199521;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect2-5"
+         width="9.9002113"
+         height="20.940001"
+         x="-0.25438133"
+         y="88.523506" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:6.98031px;line-height:0.85;white-space:pre;inline-size:8.33207;display:inline;fill:#ffffff;stroke:none;stroke-width:1.19215;stroke-opacity:1;paint-order:fill markers stroke"
+         x="1.5681455"
+         y="96.684601"
+         id="text3-2"
+         transform="translate(-0.25438158,-0.85356278)"><tspan
+           x="1.5681455"
+           y="96.684601"
+           id="tspan6"><tspan
+   style="font-weight:bold;font-family:linzklar_rounded;-inkscape-font-specification:'linzklar_rounded Bold'"
+   id="tspan1">島</tspan>
+</tspan><tspan
+           x="1.5681455"
+           y="104.10236"
+           id="tspan8"><tspan
+             style="font-weight:bold;font-family:linzklar_rounded;-inkscape-font-specification:'linzklar_rounded Bold'"
+             id="tspan7">集</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0.8;font-family:xedixel;-inkscape-font-specification:xedixel;letter-spacing:0px;fill:#ffffff;stroke:none;stroke-width:0.723;stroke-opacity:1;paint-order:fill markers stroke"
+         x="8.3564987"
+         y="106.34943"
+         id="text4-7"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           x="4.6973104"
+           y="106.34943"
+           style="line-height:0.8;text-align:center;text-anchor:middle"><tspan
+             id="tspan4-6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0.8;font-family:xedixel;-inkscape-font-specification:xedixel;text-align:center;text-anchor:middle;stroke-width:0.723"
+             x="4.6973104"
+             y="106.34943">pmcp</tspan></tspan><tspan
+           sodipodi:role="line"
+           id="tspan3-1"
+           x="4.6973104"
+           y="108.88943"
+           style="line-height:0.8;text-align:center;text-anchor:middle">lukup</tspan></text>
     </g>
   </g>
 </svg>
