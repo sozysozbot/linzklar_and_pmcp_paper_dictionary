@@ -12,7 +12,6 @@
 - [3 言語まえがき](./vivliostyle/0_02_03_foreword.html)
 - [著者一覧](./vivliostyle/0_04_authors.html)
 - [全体の目次](./vivliostyle/0_05_grand_index.html)
-- [見開き地図](./vivliostyle/0_06_07_pmcp_map.html)
 - [燐字タイトルページ](./vivliostyle/0_08_09_linzklar_start.html)
 - [この辞典の使い方（燐字辞書側）](./vivliostyle/0_10_how_to_use_linzklar.html)
 - [燐字辞書目次](./vivliostyle/0_99_linzklar_index.html)
@@ -20,14 +19,13 @@
     - [目四片_清字](./vivliostyle/目四片_清字.html)
 - [東島通商語タイトルページ](./vivliostyle/4_01_pmcp_start.html)
 - [この辞典の使い方（東島通商語辞書側）](./vivliostyle/4_02_how_to_use_pmcp.html)
-- [東島通商語辞書目次](./vivliostyle/4_99_pmcp_index.html)
+- [ペメセペ・ルヨㇳによる五十音表](./vivliostyle/6_08_pmcp_50on.html)
 - 日本机戦連盟 厳選東島通商語辞書 
-    - [5_06_ハ](5_06_ハ.html)
+    - [東島通商語辞書 (4% 抜粋版)](5_06_ハ.html)
 - [付録の目次](./vivliostyle/6_00_appendix_index.html)
 - [パイグ語文法 概略](./vivliostyle/6_03_grammar_linzklar.html)
 - [東島通商語文法 概略](./vivliostyle/6_06_grammar_pmcp.html)
 - [東島通商語 最重要40語](./vivliostyle/6_07_40_most_important_pmcp.html)
-- [ペメセペ・ルヨㇳによる五十音表](./vivliostyle/6_08_pmcp_50on.html)
 - [奥付](./vivliostyle/6_09_colophon.html)
 - 遊び紙
 - 表3（うら表紙の裏）

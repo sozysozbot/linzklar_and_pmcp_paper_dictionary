@@ -19,7 +19,6 @@ const vivliostyleConfig = {
     '0_02_03_foreword.html',
     '0_04_authors.html',
     '0_05_grand_index.html',
-    '0_06_07_pmcp_map.html',
     '0_08_09_linzklar_start.html',
     '0_10_how_to_use_linzklar.html',
     '目四片_清字.html',
