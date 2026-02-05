@@ -22,7 +22,6 @@ const vivliostyleConfig = {
     '0_06_07_pmcp_map.html',
     '0_08_09_linzklar_start.html',
     '0_10_how_to_use_linzklar.html',
-    '0_99_linzklar_index.html',
     '目四片_清字.html',
 
     '4_01_pmcp_start.html',
