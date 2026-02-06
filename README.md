@@ -7,7 +7,6 @@
     - ある程度凝ったデザインで、【言将机戦人等 網別清字言書】「日本机戦連盟 厳選燐字辞書」｛nclc leti tectelit leti pmcp lukup cet｝「日本机戦連盟 厳選東島通商語辞書」が載っているべき
 - 表2（おもて表紙の裏）
     - [草書の字素一覧](./pruamarn.png)
-- 遊び紙
 - [白黒表紙](./vivliostyle/0_01_grand_title.html)
 - [3 言語まえがき](./vivliostyle/0_02_03_foreword.html)
 - [著者一覧](./vivliostyle/0_04_authors.html)
@@ -16,7 +15,7 @@
 - [この辞典の使い方（燐字辞書側）](./vivliostyle/0_10_how_to_use_linzklar.html)
 - [燐字辞書目次](./vivliostyle/0_99_linzklar_index.html)
 - 日本机戦連盟 厳選燐字辞書 本文
-    - [目四片_清字](./vivliostyle/目四片_清字.html)
+    - [1_01_目四片_清字](./vivliostyle/1_01_目四片_清字.html)
 - [東島通商語タイトルページ](./vivliostyle/4_01_pmcp_start.html)
 - [この辞典の使い方（東島通商語辞書側）](./vivliostyle/4_02_how_to_use_pmcp.html)
 - [ペメセペ・ルヨㇳによる五十音表](./vivliostyle/6_08_pmcp_50on.html)
