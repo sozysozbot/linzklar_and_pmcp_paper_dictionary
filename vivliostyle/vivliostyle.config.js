@@ -1,7 +1,7 @@
 // @ts-check
 /** @type {import('@vivliostyle/cli').VivliostyleConfigSchema} */
 const vivliostyleConfig = {
-  title: '言将机戦人等 網別清字言書', // populated into 'publication.json', default to 'title' of the first entry or 'name' in 'package.json'.
+  title: '目四片 言将机戦人等 網別清字言書', // populated into 'publication.json', default to 'title' of the first entry or 'name' in 'package.json'.
   author: '日本机戦連盟', // default to 'author' in 'package.json' or undefined
   // language: 'la',
   // readingProgression: 'rtl', // reading progression direction, 'ltr' or 'rtl'.
@@ -26,7 +26,7 @@ const vivliostyleConfig = {
     '4_01_pmcp_start.html',
     '4_02_how_to_use_pmcp.html',
     '6_08_pmcp_50on.html',
-    '5_06_ハ.html',
+    '5_06_目四片_島言.html',
 
     '6_00_appendix_index.html',
     '6_03_grammar_linzklar.html',

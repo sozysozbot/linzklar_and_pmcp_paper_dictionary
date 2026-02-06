@@ -2,14 +2,14 @@
 
 ## 全体の流れ
 
-- `EDIT_ME_タ.tsv` にタ行の語について書く
-- `node build_pmcp.js` により、`vivliostyle/タ.html` を作る
+- `EDIT_ME_目四片_島言.tsv` に書く
+- `node build_pmcp.js` により、`vivliostyle/5_06_目四片_島言.html` を作る
 - `cd vivliostyle; npx vivliostyle build -m` により、`nclc-leti-tectelit-leti-pmcp-lukup-cet.pdf` が出来上がる。トリムマークが要らないなら `-m` を削る。
-- 満足したら、柱見出しを手動で割り当てるために `GUIDE_WORDS_タ.json` を編集し、ビルド作業をもう一度行う
+- 満足したら、柱見出しを手動で割り当てるために `GUIDE_WORDS_目四片_島言.json` を編集し、ビルド作業をもう一度行う
 
 `cd vivliostyle; npx vivliostyle build -m` は vivliostyle/build.bat でできる。
 
-なお、vivliostyle/preview.bat を使ってプレビューを立ち上げておくと、「`node build_html.js` により、`vivliostyle/タ.html` を作る」をトリガーにしてプレビューが更新されるので作業しやすい。
+なお、vivliostyle/preview.bat を使ってプレビューを立ち上げておくと、「`node build_html.js` により、`vivliostyle/5_06_目四片_島言.html` を作る」をトリガーにしてプレビューが更新されるので作業しやすい。
 
 どちらのバッチファイルも、エクスプローラーから起動すること。（カレントディレクトリの関係）
 

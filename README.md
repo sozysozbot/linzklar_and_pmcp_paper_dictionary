@@ -21,7 +21,7 @@
 - [この辞典の使い方（東島通商語辞書側）](./vivliostyle/4_02_how_to_use_pmcp.html)
 - [ペメセペ・ルヨㇳによる五十音表](./vivliostyle/6_08_pmcp_50on.html)
 - 日本机戦連盟 厳選東島通商語辞書 
-    - [東島通商語辞書 (4% 抜粋版)](5_06_ハ.html)
+    - [東島通商語辞書 (4% 抜粋版)](5_06_目四片_島言.html)
 - [付録の目次](./vivliostyle/6_00_appendix_index.html)
 - [パイグ語文法 概略](./vivliostyle/6_03_grammar_linzklar.html)
 - [東島通商語文法 概略](./vivliostyle/6_06_grammar_pmcp.html)
