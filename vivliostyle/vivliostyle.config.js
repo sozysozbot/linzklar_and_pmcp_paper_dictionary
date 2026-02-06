@@ -22,14 +22,14 @@ const vivliostyleConfig = {
     '0_08_09_linzklar_start.html',
     '0_10_how_to_use_linzklar.html',
     '目四片_清字.html',
-
+    
     '4_01_pmcp_start.html',
     '4_02_how_to_use_pmcp.html',
     '6_08_pmcp_50on.html',
     '5_06_目四片_島言.html',
-
+    
     '6_00_appendix_index.html',
-    '6_03_grammar_linzklar.html',
+    '6_03_grammar_linzklar_abridged.html',
     '6_06_grammar_pmcp.html',
     '6_07_40_most_important_pmcp.html',
     '6_09_colophon.html',
