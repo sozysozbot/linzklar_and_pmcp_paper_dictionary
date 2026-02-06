@@ -24,7 +24,7 @@
     - [東島通商語辞書 (4% 抜粋版)](5_06_目四片_島言.html)
 - [付録の目次](./vivliostyle/6_00_appendix_index.html)
 - [爆速 パイグ語](./vivliostyle/6_03_grammar_linzklar_abridged.html)
-- [東島通商語文法 概略](./vivliostyle/6_06_grammar_pmcp.html)
+- [爆速 東島通商語](./vivliostyle/6_06_grammar_pmcp_abridged.html)
 - [東島通商語 最重要40語](./vivliostyle/6_07_40_most_important_pmcp.html)
 - [奥付](./vivliostyle/6_09_colophon.html)
 - 遊び紙
