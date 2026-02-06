@@ -195,7 +195,7 @@ function build(行, file_name_prefix) {
 
 <style>
     @page:left { 
-        background-image: url("爪見出し/${行}_left.png");
+        background-image: url("爪見出し/${file_name_prefix}_${行}_left.png");
         background-size: 483.8px 687.9px;
         background-repeat: no-repeat;
         @top-left { font-family: "M+ 1p Heavy"; font-size: 14pt; } /* 左ページでは左の柱見出しのみ */
@@ -203,7 +203,7 @@ function build(行, file_name_prefix) {
     }
 
     @page:right { 
-        background-image: url("爪見出し/${行}_right.png");
+        background-image: url("爪見出し/${file_name_prefix}_${行}_right.png");
         background-size: 483.8px 687.9px;
         background-repeat: no-repeat;
         @top-left { font-family: "M+ 1p Heavy"; font-size: 0pt; }
