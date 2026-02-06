@@ -22,7 +22,7 @@ jobs:
 
       - name: Source Han Serif SemiBold のダウンロード
         run: |
-          curl -L -o fonts/SourceHanSerif-Semibold.otf "https://github.com/adobe-fonts/source-han-serif/raw/release/OTF/Japanese/SourceHanSerif-Semibold.otf"
+          curl -L -o fonts/SourceHanSerif-Semibold.otf "https://github.com/adobe-fonts/source-han-serif/raw/release/OTF/Japanese/SourceHanSerif-SemiBold.otf"
 
       - name: Source Han Serif Regular のダウンロード
         run: |
