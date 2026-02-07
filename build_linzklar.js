@@ -7,6 +7,11 @@ const variant_table = fs.readFileSync("VARIANTS.tsv", { encoding: 'utf-8' })
     .map(line => line.split("\t"))
     .slice(1);
 
+const english_gloss_table = fs.readFileSync("english_gloss_of_linzklar.tsv", { encoding: 'utf-8' })
+    .trimEnd()
+    .split(/\r?\n/)
+    .map(line => line.split("\t"));
+
 const variant_map = new Map(variant_table.map(([linzklar, variants_官字, variants_風字]) => {
     return [linzklar, { variants_官字: [...variants_官字], variants_風字: [...variants_風字] }]
 }));
@@ -238,8 +243,13 @@ function gen_entry({ linzklar: linzklar_, definitions, sentences }, lang) {
 
     LINZKLARS_IN_ROUNDED += word_written_in_linzklar;
 
+    const english_gloss = word_written_in_linzklar.split("").map(c => {
+        const [_, gloss] = english_gloss_table.find(([c_, _]) => c_ === c) || [null, null];
+        return gloss.toUpperCase() || `${c} (gloss missing)`;
+    }).join(":");
+
     return `<div class="entry">
-    <span class="entry-word-linzklar">${word_written_in_linzklar}</span> <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}</span> <span class="entry-word-transcription" lang="${lang.toLowerCase()}">【${word_written_in_linzklar}】</span>
+    <span class="entry-word-linzklar">${word_written_in_linzklar}</span> <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}</span> <span class="entry-word-transcription" lang="${lang.toLowerCase()}">【${lang.toLowerCase() === "en" ? english_gloss : word_written_in_linzklar}】</span>
     <div class="sub">
 ${gen_definitions(definitions)}
 ${sentences.map((a) => gen_sample_sentence(a, lang)).join("")}    </div>
