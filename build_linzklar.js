@@ -31,8 +31,8 @@ const idiomatic_multichar_pronunciation_table = fs.readFileSync("IDIOMATIC_MULTI
 
 let LINZKLARS_IN_ROUNDED = "";
 
-build("11_01_EN", "目四片_清字");
-build("31_01_JA", "目四片_清字");
+build("11_01", "EN", "目四片_清字");
+build("31_01", "JA", "目四片_清字");
 
 {
     const glyphs = fs.readFileSync("non_dummy_glyph_list.json", { encoding: 'utf-8' });
@@ -68,8 +68,8 @@ function group_entries_tsv(ungrouped) {
     return grouped;
 }
 
-function build(file_name_prefix, index) {
-    const main_index = `${file_name_prefix}_${index}`;
+function build(_prefix, lang, index) {
+    const main_index = `${_prefix}_${lang}_${index}`;
     const guide_words = JSON.parse(fs.readFileSync(`GUIDE_WORDS_${main_index}.json`, { encoding: 'utf-8' }));
 
     const entries_tsv = fs.readFileSync(`entries_${main_index}.tsv`, { encoding: 'utf8' })
