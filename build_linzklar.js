@@ -127,7 +127,7 @@ function gen_pronunciation(linzklar, format = "kana") {
         if (entry) {
             if (format === "kana")
                 return entry[1];
-            else 
+            else
                 throw new Error(`Unsupported format ${format} for a multichar idiom ${linzklar}.`);
         } else {
             console.log(`Missing pronunciation for ${c}. Provide it in the PRONUNCIATIONS.tsv file.`);
@@ -175,6 +175,43 @@ ${kana}`);
     }
 }
 
+function gen_entry_of_single_char({ linzklar, lang, pronunciation_, definitions, sentences }) {
+    const variants_官字 = variant_map.get(linzklar)?.variants_官字;
+    const variants_風字 = variant_map.get(linzklar)?.variants_風字;
+
+    const 官字_list = variants_官字 ? [linzklar, ...variants_官字] : [linzklar];
+    const 風字_list = variants_風字 ? [linzklar, ...variants_風字] : [linzklar];
+
+    const vulgar_pronunciation_kana = vulgar_map.get(linzklar)?.vulgar_pronunciation;
+    const latin_pronunciation = vulgar_map.get(linzklar)?.vulgar_latin;
+
+    check_consistency({ context: linzklar, latin: latin_pronunciation, kana: vulgar_pronunciation_kana });
+
+    const entry_word_transcription = (() => {
+        const chars_including_variants = [linzklar, ... new Set([... (variants_官字 ?? []), ...(variants_風字 ?? [])])];
+
+        return `<span class="entry-word-transcription" lang="ja">${chars_including_variants.map(c => `【${c}】`).join("")
+            }</span>`;
+    })();
+
+
+    return `<div class="group-char-entry-with-the-following">
+<div class="char-entry" id="u${linzklar.codePointAt(0).toString(16).toLowerCase()}">
+    <span class="char-entry-linzklar">${官字_list.map(官字 => `<img src="../SY_handwriting/官字/${官字}.png" style="height: 1em">`).join("")
+        }${風字_list.map(風字 => `<img src="../SY_handwriting/風字/${風字}.png" style="height: 1em">`).join("")
+        }</span> 
+</div>
+
+<div class="entry">
+    <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}${vulgar_pronunciation_kana ? `　(俗に) ${vulgar_pronunciation_kana}` : ""
+        }</span> ${entry_word_transcription}
+    <div class="sub">
+${gen_definitions(definitions)}
+${sentences.map((a) => gen_sample_sentence(a, lang)).join("")}    </div>
+</div>
+</div> <!-- .group-char-entry-with-the-following -->`;
+}
+
 function gen_entry({ linzklar: linzklar_, definitions, sentences }, lang) {
     if (linzklar_.startsWith("#REDIRECT")) {
         const o = JSON.parse(linzklar_.slice("#REDIRECT".length));
@@ -190,45 +227,19 @@ function gen_entry({ linzklar: linzklar_, definitions, sentences }, lang) {
     }
 
     const pronunciation_ = gen_pronunciation(linzklar_, lang.toUpperCase() === "JA" ? "kana" : "latin");
-    const linzklar = linzklar_.replace(/«(.+?)»/g, "$1"); // remove the markers of idiomatic multichar
+    const word_written_in_linzklar = linzklar_.replace(/«(.+?)»/g, "$1"); // remove the markers of idiomatic multichar
 
     sentences = sentences ?? [];
     definitions = definitions ?? [];
-    if ([...linzklar].length === 1) {
-        const variants_官字 = variant_map.get(linzklar)?.variants_官字;
-        const variants_風字 = variant_map.get(linzklar)?.variants_風字;
-
-        const 官字_list = variants_官字 ? [linzklar, ...variants_官字] : [linzklar];
-        const 風字_list = variants_風字 ? [linzklar, ...variants_風字] : [linzklar];
-
-        const vulgar_pronunciation_kana = vulgar_map.get(linzklar)?.vulgar_pronunciation;
-        const latin_pronunciation = vulgar_map.get(linzklar)?.vulgar_latin;
-
-        check_consistency({ context: linzklar, latin: latin_pronunciation, kana: vulgar_pronunciation_kana });
-
-
-        return `<div class="group-char-entry-with-the-following">
-<div class="char-entry" id="u${linzklar.codePointAt(0).toString(16).toLowerCase()}">
-    <span class="char-entry-linzklar">${官字_list.map(官字 => `<img src="../SY_handwriting/官字/${官字}.png" style="height: 1em">`).join("")
-            }${風字_list.map(風字 => `<img src="../SY_handwriting/風字/${風字}.png" style="height: 1em">`).join("")
-            }</span> 
-</div>
-
-<div class="entry">
-    <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}${vulgar_pronunciation_kana ? `　(俗に) ${vulgar_pronunciation_kana}` : ""
-            }</span> <span class="entry-word-transcription" lang="ja">${[linzklar, ... new Set([... (variants_官字 ?? []), ...(variants_風字 ?? [])])].map(c => `【${c}】`).join("")
-            }</span>
-    <div class="sub">
-${gen_definitions(definitions)}
-${sentences.map((a) => gen_sample_sentence(a, lang)).join("")}    </div>
-</div>
-</div> <!-- .group-char-entry-with-the-following -->`;
+    if ([...word_written_in_linzklar].length === 1) {
+        const linzklar = word_written_in_linzklar;
+        return gen_entry_of_single_char({ linzklar, lang, pronunciation_, definitions, sentences })
     }
 
-    LINZKLARS_IN_ROUNDED += linzklar;
+    LINZKLARS_IN_ROUNDED += word_written_in_linzklar;
 
     return `<div class="entry">
-    <span class="entry-word-linzklar">${linzklar}</span> <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}</span> <span class="entry-word-transcription" lang="${lang.toLowerCase()}">【${linzklar}】</span>
+    <span class="entry-word-linzklar">${word_written_in_linzklar}</span> <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}</span> <span class="entry-word-transcription" lang="${lang.toLowerCase()}">【${word_written_in_linzklar}】</span>
     <div class="sub">
 ${gen_definitions(definitions)}
 ${sentences.map((a) => gen_sample_sentence(a, lang)).join("")}    </div>
