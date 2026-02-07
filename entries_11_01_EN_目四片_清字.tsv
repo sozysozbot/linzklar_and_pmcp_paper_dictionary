@@ -51,7 +51,7 @@
 皇論之書	[noun]	タムツイの書
 皇論之書		タムツイにおいて重要な教典。
 皇来	[noun]	タザク、タサク（人名）
-皇再来	[noun]	（セッカイクの減点役）タムの千日手
+皇再来	[noun]	(a Hand in Cetkaik worth negative points) The Futile Move of Tam
 皇集	[noun]	アタラム郡（アイル共和国の郡名）
 皇島	[noun]	アタラン島（アイル共和国を構成する島の一つ）
 皇月島	[noun]	タムシエルミワ島（ヴェフィス共和国を構成する島の一つ）
@@ -65,25 +65,25 @@
 四	[abbreviation]	(music) the note seven semitones above the reference pitch, the note "so" in movable do solfège
 四之衣	[noun]	アパータ、アープアターク、アーパターク
 四之衣		ラネーメやヴェフィスの伝統的な衣服の一つ。袖があり、四枚の布を繋いで作られる。素材は綿や麻が多い。
-耳	[verb]	聞く
-耳識	[verb]	注意を傾けて聞く
-耳識	[stative verb]	聞いて分かる
-耳識	[節要求動詞]	～と伝え聞く
+耳	[verb]	to hear, to listen
+耳識	[verb]	to pay attention and listen
+耳識	[stative verb]	to listen and understand
+耳識	[clause-taking verb]	～と伝え聞く
 来	[verb]	来る、～へやってくる
 来	[stative verb]	～出身である
 来	[suffix]	〔動詞の後ろについて〕（主語）の元へと
 心来	[verb]	感じる
 急来	[verb]	走ってやってくる
-識来	[verb]	理解する
+識来	[verb]	to understand
 再来	[verb]	～（場所）へと戻る
 与来	[verb]	持ってくる
 引来	[verb]	引き寄せる
 集来	[verb]	集める
 手来	[verb]	手に取る
 皇来	[noun]	タザク、タサク（人名）
-心来如	[節要求動詞]	まるで～したかと思った
+心来如	[clause-taking verb]	まるで～したかと思った
 心来如	我心来如我壊終	わたし、死んだかと思った。
-皇再来	[noun]	（セッカイクの減点役）タムの千日手
+皇再来	[noun]	(a Hand in Cetkaik worth negative points) The Futile Move of Tam
 再識来	[verb]	思い起こす、思い出す
 新星善来	[interjection]	Happy New Year!
 新星善来	[interjection]	Happy Birthday!
@@ -96,25 +96,25 @@
 川端	[noun]	riverbank
 国端	[noun]	国境
 上端	[noun]	上端、最上部
-筆端	[noun]	書き込み先、左辺値
-目端	[noun]	読み取り元、右辺値
+筆端	[noun]	writing destination, lvalue
+目端	[noun]	reading source, rvalue
 件	[noun]	ことがら
 件即	[文接続詞]	さて、ところで
 為件	[動詞＋目的語]	物事を行う、物事をする
 労件	[noun]	労働、仕事
 識件	[noun]	アイデア、考え
-真件	[noun]	情報、知らせ
-口件之囲	[noun]	ダイニングルーム、食事室
-木	[noun]	木
+真件	[noun]	information, room
+口件之囲	[noun]	dining room
+木	[noun]	wood, tree
 木処	[noun]	forest
 木墨	[noun]	charcoal
 木平	[noun]	wooden plank
 木手	[noun]	tree branch
 木足	[noun]	tree root
 木草手	[noun]	leaf of a tree
-木紙遊術	[noun]	ボードゲーム、アナログゲーム、非電源ゲーム
+木紙遊術	[noun]	board game, analog game, non-electronic game
 木獣	[noun]	rabbit
-小木	[noun]	低木
+小木	[noun]	shrub
 草木	[noun]	草木、植物
 立木	[verb+object]	to plant trees
 立木	我等立終百木	We planted 100 trees.
