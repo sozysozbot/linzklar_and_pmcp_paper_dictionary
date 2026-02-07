@@ -243,7 +243,7 @@ function gen_entry({ linzklar: linzklar_, definitions, sentences }, lang) {
 
     LINZKLARS_IN_ROUNDED += word_written_in_linzklar;
 
-    const english_gloss = word_written_in_linzklar.split("").map(english_gloss_of_char).join("\u202f:\u202f"); // NARROW NO-BREAK SPACE
+    const english_gloss = english_gloss_of_string(word_written_in_linzklar);
 
     return `<div class="entry">
     <span class="entry-word-linzklar">${word_written_in_linzklar}</span> <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}</span> <span class="entry-word-transcription" lang="${lang.toLowerCase()}">【${lang.toLowerCase() === "en" ? english_gloss : word_written_in_linzklar}】</span>
@@ -251,6 +251,10 @@ function gen_entry({ linzklar: linzklar_, definitions, sentences }, lang) {
 ${gen_definitions(definitions)}
 ${sentences.map((a) => gen_sample_sentence(a, lang)).join("")}    </div>
 </div>`
+}
+
+function english_gloss_of_string(s) {
+    return [...s].map(c => english_gloss_of_char(c)).join("\u200a:\u200a"); // hair space + colon + hair space
 }
 
 function english_gloss_of_char(c) {
@@ -282,9 +286,11 @@ function gen_sample_sentence({ linzklar, translations }, lang) {
     LINZKLARS_IN_ROUNDED += linzklar;
     const pronunciation_ = gen_pronunciation(linzklar, lang.toUpperCase() === "JA" ? "kana" : "latin");
 
+    const english_gloss = english_gloss_of_string(linzklar);
+
     return `        <div class="sample-sentence">
             <span class="sample-sentence-linzklar">${linzklar}</span> <span class="sample-sentence-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}</span>
-            <span class="sample-sentence-transcription" lang="${lang.toLowerCase()}">【${linzklar}】</span>
+            <span class="sample-sentence-transcription" lang="${lang.toLowerCase()}">【${lang.toLowerCase() === "en" ? english_gloss : linzklar}】</span>
 ${translations.map(tr => `            <div class="sample-sentence-translation" lang="${lang.toLowerCase()}">${tr}</div>\n`).join('')
 
         }        </div>
