@@ -109,7 +109,7 @@ ${Object.entries(guide_words).map(([key, value]) => `    @page:nth(${key}) {
     }
 `).join('\n')}</style>
 
-${entries.map(gen_entry).join("\n\n")}`;
+${entries.map((a) => gen_entry(a, lang)).join("\n\n")}`;
 
     if (resulting_file_content.includes("«")
         || resulting_file_content.includes("»")) {
@@ -120,12 +120,15 @@ ${entries.map(gen_entry).join("\n\n")}`;
     fs.writeFileSync(`vivliostyle/${main_index}.html`, resulting_file_content, { encoding: 'utf8' });
 }
 
-function gen_pronunciation(linzklar) {
+function gen_pronunciation(linzklar, format = "kana") {
     if (linzklar.startsWith("«") && linzklar.endsWith("»")) {
         const idiomatic_multichar = linzklar.slice(1, -1);
         const entry = idiomatic_multichar_pronunciation_table.find(([c_, _]) => c_ === idiomatic_multichar);
         if (entry) {
-            return entry[1];
+            if (format === "kana")
+                return entry[1];
+            else 
+                throw new Error(`Unsupported format ${format} for a multichar idiom ${linzklar}.`);
         } else {
             console.log(`Missing pronunciation for ${c}. Provide it in the PRONUNCIATIONS.tsv file.`);
             return `<span style="color: red">発音を提供せよ:【${c}】</span>`;
@@ -145,12 +148,12 @@ function gen_pronunciation(linzklar) {
                     console.log(`Empty pronunciation for ${c}, used in a multichar context ${linzklar}. Hiding the pronunciation.`);
                     throw new Error(`<span style="color: red">発音が定義されていない字【${c}】の熟語</span>`);
                 }
-                return kana_pronunciation;
+                return format === "kana" ? kana_pronunciation : latin_pronunciation;
             } else {
                 console.log(`Missing pronunciation for ${c}. Provide it in the PRONUNCIATIONS.tsv file.`);
                 return `<span style="color: red">発音を提供せよ:【${c}】</span>`;
             }
-        }).join("");
+        }).join(format === "kana" ? "" : " ");
     } catch (e) {
         return "";
     }
@@ -172,7 +175,7 @@ ${kana}`);
     }
 }
 
-function gen_entry({ linzklar: linzklar_, definitions, sentences }) {
+function gen_entry({ linzklar: linzklar_, definitions, sentences }, lang) {
     if (linzklar_.startsWith("#REDIRECT")) {
         const o = JSON.parse(linzklar_.slice("#REDIRECT".length));
         return `<div class="group-char-entry-with-the-following">
@@ -186,7 +189,7 @@ function gen_entry({ linzklar: linzklar_, definitions, sentences }) {
 </div> <!-- .group-char-entry-with-the-following -->`;
     }
 
-    const pronunciation_ = gen_pronunciation(linzklar_);
+    const pronunciation_ = gen_pronunciation(linzklar_, lang.toUpperCase() === "JA" ? "kana" : "latin");
     const linzklar = linzklar_.replace(/«(.+?)»/g, "$1"); // remove the markers of idiomatic multichar
 
     sentences = sentences ?? [];
@@ -212,12 +215,12 @@ function gen_entry({ linzklar: linzklar_, definitions, sentences }) {
 </div>
 
 <div class="entry">
-    <span class="entry-word-pronunciation" lang="ja">${pronunciation_}${vulgar_pronunciation_kana ? `　(俗に) ${vulgar_pronunciation_kana}` : ""
+    <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}${vulgar_pronunciation_kana ? `　(俗に) ${vulgar_pronunciation_kana}` : ""
             }</span> <span class="entry-word-transcription" lang="ja">${[linzklar, ... new Set([... (variants_官字 ?? []), ...(variants_風字 ?? [])])].map(c => `【${c}】`).join("")
             }</span>
     <div class="sub">
 ${gen_definitions(definitions)}
-${sentences.map(gen_sample_sentence).join("")}    </div>
+${sentences.map((a) => gen_sample_sentence(a, lang)).join("")}    </div>
 </div>
 </div> <!-- .group-char-entry-with-the-following -->`;
     }
@@ -225,10 +228,10 @@ ${sentences.map(gen_sample_sentence).join("")}    </div>
     LINZKLARS_IN_ROUNDED += linzklar;
 
     return `<div class="entry">
-    <span class="entry-word-linzklar">${linzklar}</span> <span class="entry-word-pronunciation" lang="ja">${pronunciation_}</span> <span class="entry-word-transcription" lang="ja">【${linzklar}】</span>
+    <span class="entry-word-linzklar">${linzklar}</span> <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}</span> <span class="entry-word-transcription" lang="${lang.toLowerCase()}">【${linzklar}】</span>
     <div class="sub">
 ${gen_definitions(definitions)}
-${sentences.map(gen_sample_sentence).join("")}    </div>
+${sentences.map((a) => gen_sample_sentence(a, lang)).join("")}    </div>
 </div>`
 }
 
@@ -247,14 +250,14 @@ function gen_definitions(definitions) {
     }).join("\n")
 }
 
-function gen_sample_sentence({ linzklar, translations }) {
+function gen_sample_sentence({ linzklar, translations }, lang) {
     LINZKLARS_IN_ROUNDED += linzklar;
-    const pronunciation_ = gen_pronunciation(linzklar);
+    const pronunciation_ = gen_pronunciation(linzklar, lang.toUpperCase() === "JA" ? "kana" : "latin");
 
     return `        <div class="sample-sentence">
-            <span class="sample-sentence-linzklar">${linzklar}</span> <span class="sample-sentence-pronunciation" lang="ja">${pronunciation_}</span>
-            <span class="sample-sentence-transcription" lang="ja">【${linzklar}】</span>
-${translations.map(tr => `            <div class="sample-sentence-translation" lang="ja">${tr}</div>\n`).join('')
+            <span class="sample-sentence-linzklar">${linzklar}</span> <span class="sample-sentence-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}</span>
+            <span class="sample-sentence-transcription" lang="${lang.toLowerCase()}">【${linzklar}】</span>
+${translations.map(tr => `            <div class="sample-sentence-translation" lang="${lang.toLowerCase()}">${tr}</div>\n`).join('')
 
         }        </div>
 `
