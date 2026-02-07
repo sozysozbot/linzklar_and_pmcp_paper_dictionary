@@ -195,7 +195,7 @@ function gen_entry_of_single_char({ linzklar, lang, pronunciation_, definitions,
     const entry_word_transcription = (() => {
         const chars_including_variants = [linzklar, ... new Set([... (variants_官字 ?? []), ...(variants_風字 ?? [])])];
 
-        return `<span class="entry-word-transcription" lang="ja">${chars_including_variants.map(c => `【${c}】`).join("")
+        return `<span class="entry-word-transcription" lang="ja">${chars_including_variants.map(c => lang.toLowerCase() === "en" ? `【${english_gloss_of_char(c)}】` : `【${c}】`).join("")
             }</span>`;
     })();
 
@@ -243,10 +243,7 @@ function gen_entry({ linzklar: linzklar_, definitions, sentences }, lang) {
 
     LINZKLARS_IN_ROUNDED += word_written_in_linzklar;
 
-    const english_gloss = word_written_in_linzklar.split("").map(c => {
-        const [_, gloss] = english_gloss_table.find(([c_, _]) => c_ === c) || [null, null];
-        return gloss.toUpperCase() || `${c} (gloss missing)`;
-    }).join(":");
+    const english_gloss = word_written_in_linzklar.split("").map(english_gloss_of_char).join("\u202f:\u202f"); // NARROW NO-BREAK SPACE
 
     return `<div class="entry">
     <span class="entry-word-linzklar">${word_written_in_linzklar}</span> <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}</span> <span class="entry-word-transcription" lang="${lang.toLowerCase()}">【${lang.toLowerCase() === "en" ? english_gloss : word_written_in_linzklar}】</span>
@@ -254,6 +251,16 @@ function gen_entry({ linzklar: linzklar_, definitions, sentences }, lang) {
 ${gen_definitions(definitions)}
 ${sentences.map((a) => gen_sample_sentence(a, lang)).join("")}    </div>
 </div>`
+}
+
+function english_gloss_of_char(c) {
+    const [_, gloss] = english_gloss_table.find(([c_, _]) => c_ === c) || [null, null];
+    if (!gloss) {
+        console.log(`Missing English gloss for ${c}. Provide it in the english_gloss_of_linzklar.tsv file.`);
+        return `<span style="color: red">Provide English gloss :${c}</span>`;
+    }
+
+    return `<span style="font-variant-caps: all-small-caps;">${gloss.toUpperCase()}</span>`;
 }
 
 function gen_definitions(definitions) {
