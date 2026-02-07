@@ -17,20 +17,18 @@ const vivliostyleConfig = {
     // },
     '0_01_grand_title.html',
     '0_02_03_foreword.html',
-    '0_04_authors.html',
-    '0_05_grand_index.html',
-    '0_08_09_linzklar_start.html',
-    '0_10_how_to_use_linzklar.html',
-    '1_01_目四片_清字.html',
-    '1_02_grammar_linzklar_abridged.html',
-    
-    '4_01_pmcp_start.html',
-    '4_02_how_to_use_pmcp.html',
-    '4_03_pmcp_50on.html',
-    '5_06_目四片_島言.html',
-    '6_06_grammar_pmcp_abridged.html',
-    
-    '6_09_colophon.html',
+    '30_04_JA_authors.html',
+    '30_05_JA_grand_index.html',
+    '30_08_JA_linzklar_start.html',
+    '30_10_JA_how_to_use_linzklar.html',
+    '31_01_JA_目四片_清字.html',
+    '31_02_JA_grammar_linzklar_abridged.html',
+    '34_01_JA_pmcp_start.html',
+    '34_02_JA_how_to_use_pmcp.html',
+    '34_03_JA_pmcp_50on.html',
+    '35_06_JA_目四片_島言.html',
+    '36_06_JA_grammar_pmcp_abridged.html',
+    '36_09_JA_colophon.html',
 
   ], // 'entry' can be 'string' or 'object' if there's only single markdown file
   // entryContext: './manuscripts', // default to '.' (relative to 'vivliostyle.config.js')

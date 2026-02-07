@@ -160,17 +160,17 @@ const pos_list = fs.readFileSync("pmcp_pos_list.txt", { encoding: 'utf-8' })
     .split(/\r?\n/);
 
 function build(行, file_name_prefix) {
-    const guide_words = JSON.parse(fs.readFileSync(`GUIDE_WORDS_${行}.json`, { encoding: 'utf-8' }));
+    const guide_words = JSON.parse(fs.readFileSync(`GUIDE_WORDS_${file_name_prefix}_${行}.json`, { encoding: 'utf-8' }));
 
     const entries_array =
-        fs.readFileSync(`EDIT_ME_${行}.tsv`, { encoding: 'utf-8' })
+        fs.readFileSync(`EDIT_ME_${file_name_prefix}_${行}.tsv`, { encoding: 'utf-8' })
             .split(/\r?\n/).slice(1)
             .map((row) => row.split('\t'))
         ;
 
 
     const grouped = group_asterisk(entries_array);
-    fs.writeFileSync(`__debug/__grouped_${行}.jsonl`, grouped.map(JSON.stringify).join('\n'), { encoding: 'utf-8' });
+    fs.writeFileSync(`__debug/__grouped_${file_name_prefix}_${行}.jsonl`, grouped.map(JSON.stringify).join('\n'), { encoding: 'utf-8' });
 
     const entries = grouped
         .map((row) => {
@@ -195,7 +195,7 @@ function build(行, file_name_prefix) {
 
 <style>
     @page:left { 
-        background-image: url("爪見出し/${file_name_prefix}_${行}_left.png");
+        background-image: url("爪見出し/${行}_left.png");
         background-size: 483.8px 687.9px;
         background-repeat: no-repeat;
         @top-left { font-family: "M+ 1p Heavy"; font-size: 14pt; } /* 左ページでは左の柱見出しのみ */
@@ -203,7 +203,7 @@ function build(行, file_name_prefix) {
     }
 
     @page:right { 
-        background-image: url("爪見出し/${file_name_prefix}_${行}_right.png");
+        background-image: url("爪見出し/${行}_right.png");
         background-size: 483.8px 687.9px;
         background-repeat: no-repeat;
         @top-left { font-family: "M+ 1p Heavy"; font-size: 0pt; }
@@ -225,4 +225,4 @@ ${entries.join('\n\n')}
 
 }
 
-build("目四片_島言", "5_06");
+build("目四片_島言", "35_06_JA");

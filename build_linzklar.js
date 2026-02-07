@@ -31,7 +31,7 @@ const idiomatic_multichar_pronunciation_table = fs.readFileSync("IDIOMATIC_MULTI
 
 let LINZKLARS_IN_ROUNDED = "";
 
-build("1_01_目四片_清字");
+build("31_01_JA", "目四片_清字");
 
 {
     const glyphs = fs.readFileSync("non_dummy_glyph_list.json", { encoding: 'utf-8' });
@@ -67,7 +67,8 @@ function group_entries_tsv(ungrouped) {
     return grouped;
 }
 
-function build(main_index) {
+function build(file_name_prefix, index) {
+    const main_index = `${file_name_prefix}_${index}`;
     const guide_words = JSON.parse(fs.readFileSync(`GUIDE_WORDS_${main_index}.json`, { encoding: 'utf-8' }));
 
     const entries_tsv = fs.readFileSync(`entries_${main_index}.tsv`, { encoding: 'utf8' })
@@ -85,7 +86,7 @@ function build(main_index) {
 
 <style>
     @page:left { 
-        background-image: url("爪見出し/${main_index}_left.png");
+        background-image: url("爪見出し/${index}_left.png");
         background-size: 483.8px 687.9px;
         background-repeat: no-repeat;
         @top-left { font-family: "linzklar_rounded"; font-size: 12pt; } /* 左ページでは左の柱見出しのみ */
@@ -93,7 +94,7 @@ function build(main_index) {
     }
 
     @page:right { 
-        background-image: url("爪見出し/${main_index}_right.png");
+        background-image: url("爪見出し/${index}_right.png");
         background-size: 483.8px 687.9px;
         background-repeat: no-repeat;
         @top-left { font-family: "linzklar_rounded"; font-size: 0pt; }
