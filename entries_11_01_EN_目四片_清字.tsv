@@ -17,10 +17,10 @@
 手軸	[noun]	finger
 値軸	[noun]	（セッカイクの）点棒
 心軸	[noun]	心臓
-裁軸	[noun]	意思決定機関、（計算機の）CPU
+裁軸	[noun]	decision-making body, CPU (of a computer) 
 裁軸	国論集此冠国之上端裁軸	国会はアイル共和国の最高意思決定機関である。
 獣軸	[noun]	（セッカイクの）<span class="inline-linzklar">王</span>【王】
-島軸言	[noun]	島の公用語
+島軸言	[noun]	island’s official language
 骨軸倉字	[noun]	丸ゴシック調のフォント
 冠軸官行	[noun]	アイル民族中心主義的政策
 下筆軸	[noun]	二等事務員（アイル共和国の省庁の<span class="inline-linzklar">筆</span>【筆】において 2 番目に低い階級）
@@ -33,31 +33,31 @@
 上将軸	[noun]	上等実働監（アイル共和国の省庁の<span class="inline-linzklar">兵</span>【兵】において 9 番目に低い階級）
 皇	[noun]	タム神（神を統率する神）、（セッカイクの）皇	
 皇	[noun]	Tam (name)	
-皇	[prefix]	タカン（言語・民族名）	
-皇	[abbreviation]	タカン（言語・民族名）	
+皇	[prefix]	Takang (language and ethnic name)	
+皇	[abbreviation]	Takang (language and ethnic name)	
 皇光	[noun]	天恵、タム神の恩恵、タカメク
 皇処	[noun]	タムホエ、タンケ（セッカイク用語）
 皇処之将	[noun]	他人のために自分を犠牲にする人、良い上司
-皇水	[noun]	タンナ（地名およびセッカイク用語）
+皇水	[noun]	Tanna (place name and Cetkaik term)
 皇下	[noun]	Tanut (city name)
-皇山	[noun]	（セッカイクの）中央の緑マス
+皇山	[noun]	green square at the center of the Cetkaik board
 皇色	[noun]	deep green colour
-皇草	[noun]	タムコト（麻薬の一種）
-皇言	[noun]	タカン語
+皇草	[noun]	tamkot (a type of drug)
+皇言	[noun]	Takang language
 皇石	[noun]	jade
-皇力	[noun]	皇効（宗教的概念およびセッカイク用語）
+皇力	[noun]	mystical effect of Tam (a religious concept and Cetkaik term)
 皇論	[noun]	タムツイ（宗教名）
 皇論		タムを最高神とするアニミズム的宗教。
 皇論之書	[noun]	タムツイの書
 皇論之書		タムツイにおいて重要な教典。
-皇来	[noun]	タザク、タサク（人名）
+皇来	[noun]	Tazak, Tasak (name)
 皇再来	[noun]	(a Hand in Cetkaik worth negative points) The Futile Move of Tam
-皇集	[noun]	アタラム郡（アイル共和国の郡名）
+皇集	[noun]	Atalam Province (one of the provinces of the Ai’ren Republic)
 皇島	[noun]	Atalam Island (one of the islands constituting the Ai’ren Republic)
-皇月島	[noun]	タムシエルミワ島（ヴェフィス共和国を構成する島の一つ）
-撃皇	[verb]	（セッカイクで）タムを踏み越える
-撃皇	[noun]	（セッカイクの減点役）タムの踏み越え
-硬皇力	[noun]	強い皇効（セッカイクのルール変種のひとつ）
+皇月島	[noun]	Tamshelmiwa Island (one of the islands constituting the Vefisait Republic)
+撃皇	[verb]	(to step over Tam in Cetkaik)
+撃皇	[noun]	(a negative scoring role in Cetkaik) Stepping over Tam
+硬皇力	[noun]	strong Tam effect (one of the rule variants of Cetkaik)
 南	[noun]	south, warm direction, direction when the sun is highest
 南		向こうの世界において、「暖かい方向」と「日が昇るところの方向」の相対的な位置関係は、日本などの地球の北半球とは逆である。この辞書で採用している漢字転写では、「暖かい方向」を表す <span class="inline-linzklar">南</span> を【南】、「日が昇るところの方向」を表す <span class="inline-linzklar">東</span> を【東】と表記している。
 四	[prenominal]	4, four
@@ -72,15 +72,15 @@
 来	[verb]	来る、～へやってくる
 来	[stative verb]	～出身である
 来	[suffix]	〔動詞の後ろについて〕（主語）の元へと
-心来	[verb]	感じる
-急来	[verb]	走ってやってくる
+心来	[verb]	to feel
+急来	[verb]	to come running
 識来	[verb]	to understand
-再来	[verb]	～（場所）へと戻る
+再来	[verb]	to return to (a place)
 与来	[verb]	持ってくる
 引来	[verb]	引き寄せる
 集来	[verb]	集める
 手来	[verb]	手に取る
-皇来	[noun]	タザク、タサク（人名）
+皇来	[noun]	Tazak, Tasak (name)
 心来如	[clause-taking verb]	まるで～したかと思った
 心来如	我心来如我壊終	わたし、死んだかと思った。
 皇再来	[noun]	(a Hand in Cetkaik worth negative points) The Futile Move of Tam
@@ -118,5 +118,5 @@
 草木	[noun]	plants, vegetation
 立木	[verb + object]	to plant trees
 立木	我等立終百木	We planted 100 trees.
-値木	[noun]	ニーンセッカイクのゲームルールのひとつ
+値木	[noun]	a name of a card game employing Neen-Cetkaik cards
 火果木	[noun]	apple tree
