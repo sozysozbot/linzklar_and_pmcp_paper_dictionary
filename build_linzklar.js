@@ -211,7 +211,7 @@ function gen_entry_of_single_char({ linzklar, lang, pronunciation_, definitions,
     <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}${vulgar_pronunciation_kana ? `　(俗に) ${vulgar_pronunciation_kana}` : ""
         }</span> ${entry_word_transcription}
     <div class="sub">
-${gen_definitions(definitions)}
+${gen_definitions(definitions, lang)}
 ${sentences.map((a) => gen_sample_sentence(a, lang)).join("")}    </div>
 </div>
 </div> <!-- .group-char-entry-with-the-following -->`;
@@ -248,7 +248,7 @@ function gen_entry({ linzklar: linzklar_, definitions, sentences }, lang) {
     return `<div class="entry">
     <span class="entry-word-linzklar">${word_written_in_linzklar}</span> <span class="entry-word-pronunciation" lang="${lang.toLowerCase()}">${pronunciation_}</span> <span class="entry-word-transcription" lang="${lang.toLowerCase()}">【${lang.toLowerCase() === "en" ? english_gloss : word_written_in_linzklar}】</span>
     <div class="sub">
-${gen_definitions(definitions)}
+${gen_definitions(definitions, lang)}
 ${sentences.map((a) => gen_sample_sentence(a, lang)).join("")}    </div>
 </div>`
 }
@@ -267,7 +267,7 @@ function english_gloss_of_char(c) {
     return `<span style="font-variant-caps: all-small-caps;">${gloss.toUpperCase()}</span>`;
 }
 
-function gen_definitions(definitions) {
+function gen_definitions(definitions, lang) {
     definitions.forEach(({ definition }) => {
         const test = /<span class="inline-linzklar">([^<]*)<\/span>/.exec(definition);
         test && (LINZKLARS_IN_ROUNDED += test[1]);
@@ -275,9 +275,9 @@ function gen_definitions(definitions) {
 
     return definitions.map(({ POS, definition }) => {
         if (POS) {
-            return `        <span class="sub-POS" lang="ja">${POS}</span> <span class="sub-definition" lang="ja">${definition}</span><br>`
+            return `        <span class="sub-POS" lang="${lang.toLowerCase()}">${POS}</span> <span class="sub-definition" lang="${lang.toLowerCase()}">${definition}</span><br>`
         } else {
-            return `        <span class="sub-definition" lang="ja">${definition}</span><br>`
+            return `        <span class="sub-definition" lang="${lang.toLowerCase()}">${definition}</span><br>`
         }
     }).join("\n")
 }
