@@ -67,11 +67,28 @@
     font-weight: bold;
 }
 
+.sub-POS[lang="en"] {
+    /* 子見出し（品詞） */
+    font-size: calc(9pt * var(--scale));
+    font-family: "Times New Roman";
+    font-weight: bold;
+    hyphens: auto;
+}
+
 .sub-definition {
     /* 子見出しの語釈 */
     font-size: calc(9pt * var(--scale));
     font-family: "Source Han Serif";
     line-height: 1.05;
+}
+
+
+.sub-definition[lang="en"] {
+    /* 子見出しの語釈 */
+    font-size: calc(9pt * var(--scale));
+    font-family: "Times New Roman";
+    line-height: 1.05;
+    hyphens: auto;
 }
 
 div.sample-sentence {
