@@ -18,7 +18,7 @@
     font-size: calc(12pt * var(--scale));
 }
 
-.entry > span {
+.entry>span {
     display: inline-block;
     break-inside: avoid;
 }
@@ -27,7 +27,7 @@
     font-size: calc(9pt * var(--scale));
     font-weight: bold;
     font-family: "Source Han Serif Heavy";
-    line-break: strict; 
+    line-break: strict;
 }
 
 .entry-word-transcription {
@@ -86,7 +86,8 @@
     font-variant-caps: all-small-caps;
 
     /* gloss は英語でも Source Han Serif を強制 */
-    font-family: "Source Han Serif";
+    font-weight: bold;
+    font-family: "Source Han Serif Heavy";
 }
 
 
@@ -103,7 +104,7 @@ div.sample-sentence {
     margin-top: 1.5mm;
 }
 
-.sample-sentence > span {
+.sample-sentence>span {
     display: inline-block;
     break-inside: avoid;
 }
@@ -118,7 +119,7 @@ div.sample-sentence {
     font-size: calc(6pt * var(--scale));
     font-family: "Source Han Serif";
     line-height: 1.05;
-    line-break: strict; 
+    line-break: strict;
 }
 
 .sample-sentence-transcription {
