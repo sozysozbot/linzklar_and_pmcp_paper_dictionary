@@ -264,7 +264,7 @@ function english_gloss_of_char(c) {
         return `<span style="color: red">Provide English gloss :${c}</span>`;
     }
 
-    return `<span style="font-variant-caps: all-small-caps;">${gloss.toUpperCase()}</span>`;
+    return `<span class="english-gloss">${gloss.toUpperCase()}</span>`;
 }
 
 function gen_definitions(definitions, lang) {

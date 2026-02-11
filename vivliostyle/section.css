@@ -82,6 +82,13 @@
     line-height: 1.05;
 }
 
+.english-gloss {
+    font-variant-caps: all-small-caps;
+
+    /* gloss は英語でも Source Han Serif を強制 */
+    font-family: "Source Han Serif";
+}
+
 
 .sub-definition[lang="en"] {
     /* 子見出しの語釈 */
@@ -125,6 +132,13 @@ div.sample-sentence {
     font-family: "Source Han Serif";
     line-height: 1.05;
     margin-left: 3.5mm;
+}
+
+.sample-sentence-translation[lang="en"] {
+    font-size: calc(9pt * var(--scale));
+    font-family: "Times New Roman";
+    line-height: 1.05;
+    margin-left: 3mm;
 }
 
 header {
