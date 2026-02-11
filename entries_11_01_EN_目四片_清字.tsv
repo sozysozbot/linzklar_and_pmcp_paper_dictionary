@@ -2,7 +2,7 @@
 軸	[prefix]	中核的な、中心的な
 軸	[suffix]	～の中心、～の中核
 軸	[abbreviation]	<span class="inline-linzklar">筆兵集</span>【筆兵集】（アイル共和国総務省）
-軸人	[noun]	中心人物、（カードゲームの）親
+軸人	[noun]	key figure, central person, (in card games) starting player, dealer
 軸言	[noun]	first language, mother tongue
 軸律	[noun]	constitution
 軸筆	[noun]	pen
@@ -15,23 +15,23 @@
 言軸	[noun]	topic
 銭軸	[noun]	company, firm, corporation
 手軸	[noun]	finger
-値軸	[noun]	（セッカイクの）点棒
+値軸	[noun]	(Cetkaik) scoring sticks, sticks used to keep track of points
 心軸	[noun]	heart (organ)
 裁軸	[noun]	decision-making body, CPU (of a computer) 
 裁軸	国論集此冠国之上端裁軸	国会はアイル共和国の最高意思決定機関である。
 獣軸	[noun]	(Cetkaik) king <span class="inline-linzklar">王</span>【<span style="font-variant-caps: all-small-caps;">KING</span>】
 島軸言	[noun]	island’s official language
-骨軸倉字	[noun]	丸ゴシック調のフォント
+骨軸倉字	[noun]	sans-serif font with rounded and uniform-width strokes 
 冠軸官行	[noun]	アイル民族中心主義的政策
-下筆軸	[noun]	二等事務員（アイル共和国の省庁の<span class="inline-linzklar">筆</span>【筆】において 2 番目に低い階級）
-上筆軸	[noun]	上等事務員（アイル共和国の省庁の<span class="inline-linzklar">筆</span>【筆】において 4 番目に低い階級）
-下翰軸	[noun]	二等事務監（アイル共和国の省庁の<span class="inline-linzklar">筆</span>【筆】において 7 番目に低い階級）
-上翰軸	[noun]	上等事務監（アイル共和国の省庁の<span class="inline-linzklar">筆</span>【筆】において 9 番目に低い階級）
-下兵軸	[noun]	二等実働員（アイル共和国の省庁の<span class="inline-linzklar">兵</span>【兵】において 2 番目に低い階級）
-上兵軸	[noun]	上等実働員（アイル共和国の省庁の<span class="inline-linzklar">兵</span>【兵】において 4 番目に低い階級）
-下将軸	[noun]	二等実働監（アイル共和国の省庁の<span class="inline-linzklar">兵</span>【兵】において 7 番目に低い階級）
-上将軸	[noun]	上等実働監（アイル共和国の省庁の<span class="inline-linzklar">兵</span>【兵】において 9 番目に低い階級）
-皇	[noun]	タム神（神を統率する神）、（セッカイクの）皇	
+下筆軸	[noun]	the 2nd-lowest rank in the Administrative Officers division (<span class="inline-linzklar">筆</span>【<span style="font-variant-caps: all-small-caps;">PEN</span>】) of the Ai’ren Republic ministries
+上筆軸	[noun]	the 4th-lowest rank in the Administrative Officers division (<span class="inline-linzklar">筆</span>【<span style="font-variant-caps: all-small-caps;">PEN</span>】) of the Ai’ren Republic ministries
+下翰軸	[noun]	the 7th-lowest rank in the Administrative Officers division (<span class="inline-linzklar">筆</span>【<span style="font-variant-caps: all-small-caps;">PEN</span>】) of the Ai’ren Republic ministries
+上翰軸	[noun]	the 9th-lowest rank in the Administrative Officers division (<span class="inline-linzklar">筆</span>【<span style="font-variant-caps: all-small-caps;">PEN</span>】) of the Ai’ren Republic ministries
+下兵軸	[noun]	the 2nd-lowest rank in the Site Workers division (<span class="inline-linzklar">兵</span>【<span style="font-variant-caps: all-small-caps;">SOLDIER</span>】) of the Ai’ren Republic ministries
+上兵軸	[noun]	the 4th-lowest rank in the Site Workers division (<span class="inline-linzklar">兵</span>【<span style="font-variant-caps: all-small-caps;">SOLDIER</span>】) of the Ai’ren Republic ministries
+下将軸	[noun]	the 7th-lowest rank in the Site Workers division (<span class="inline-linzklar">兵</span>【<span style="font-variant-caps: all-small-caps;">SOLDIER</span>】) of the Ai’ren Republic ministries
+上将軸	[noun]	the 9th-lowest rank in the Site Workers division (<span class="inline-linzklar">兵</span>【<span style="font-variant-caps: all-small-caps;">SOLDIER</span>】) of the Ai’ren Republic ministries
+皇	[noun]	Tam (deity that governs all the dieties), (Cetkaik) Tam	
 皇	[noun]	Tam (name)	
 皇	[prefix]	Takang (language and ethnic name)	
 皇	[abbreviation]	Takang (language and ethnic name)	
@@ -84,7 +84,7 @@
 心来如	[clause-taking verb]	まるで～したかと思った
 心来如	我心来如我壊終	わたし、死んだかと思った。
 皇再来	[noun]	(a Hand in Cetkaik worth negative points) The Futile Move of Tam
-再識来	[verb]	思い起こす、思い出す
+再識来	[verb]	to recall
 新星善来	[interjection]	Happy New Year!
 新星善来	[interjection]	Happy Birthday!
 端	[noun]	edge, rim, extremity
