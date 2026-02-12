@@ -30,6 +30,13 @@
     line-break: strict;
 }
 
+.entry-word-pronunciation[lang="en"] {
+    font-size: calc(11pt * var(--scale));
+    font-weight: bold;
+    font-family: "Times New Roman";
+    line-break: strict;
+}
+
 .entry-word-transcription {
     font-size: calc(9pt * var(--scale));
     font-weight: bold;
