@@ -40,6 +40,8 @@
     font-size: calc(12pt * var(--scale));
     font-weight: normal;
     font-family: "linzklar_rounded";
+    position: relative;
+    top: .1em;
 }
 
 .inline-linzklar {
