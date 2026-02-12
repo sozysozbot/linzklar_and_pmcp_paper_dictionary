@@ -23,6 +23,8 @@ const vivliostyleConfig = {
     '10_10_EN_how_to_use_linzklar.html',
     '11_01_EN_目四片_清字.html',
     '11_02_EN_grammar_linzklar_abridged.html',
+    '14_01_EN_pmcp_start.html',
+
     '30_03_JA_grand_title.html',
     '30_04_JA_authors.html',
     '30_05_JA_grand_index.html',
