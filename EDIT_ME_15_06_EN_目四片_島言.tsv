@@ -2,15 +2,15 @@
 ail		ail			noun	Ai’r (ethnicity; country)	
 at		at			conjunction for nouns	and	
 auc		auc			noun	all, everything	
-belpic	*	belpic			noun	遊び、遊戯	
-belpic	*	belpic			verb	遊ぶ	
+belpic	*	belpic			noun	play, game	
+belpic	*	belpic			verb	to play	
 belpic	*	belpic	belpicit	belpicit	transitive verb	to play <i>something</i>	
 cene		cene			preverbal auxiliary verb	can <i>do</i>, be able to <i>do</i>	
-cet	*	cet			noun suffix	多数性を示す接辞	
-cet	*	cet			preverbal auxiliary verb	とても	
-cet	*	cet	cetit	cetit	transitive verb	～を増やす	
+cet	*	cet			noun suffix	(indicates plurality; indicates that there are many)	
+cet	*	cet			preverbal auxiliary verb	quite, very	
+cet	*	cet	cetit	cetit	transitive verb	to increase <i>something</i>	
 cet	*	cet	cetleti	cetleti	adjective	many, much, a lot of	
-ci		ci			noun	それ、かれ、あれ	
+ci		ci			noun	it, he, she, they, that	
 co	*	co			noun	you	
 co	*	co	coleti	coleti	adjective	your, yours	
 cul		cul			noun	method, tool, way	
@@ -19,12 +19,12 @@ e		e			special verb	to be
 et	*	et			noun	other, another	
 et	*	et	etleti	etleti	adjective	other, another	
 it		it			transitive verb	to do <i>something</i>	
-jo		jo			preposition	～において、～へ、～から、～で、～によって	
+jo		jo			preposition	in, to, from, at, by, on	
 julo		julo			noun	thing, stuff	
 ka	*¹	ka			noun	this, these	
 ka	*¹	ka	kaleti	kaleti	adjective	this, these	
 ka	*²	ka	kaleti	kaleti	numeral	2, two　　Note: only used when it directly follows another numeral	
-kije		kije			postverbal auxiliary verb	主語へ向かう動作の方向を示す	
+kije		kije			postverbal auxiliary verb	(indicates the direction of an action towards the subject)	
 kile		kile			verb	to come	
 kin	*	kin			noun	value, number, score	
 kin	*	kin			verb	（〖kin jo [1]〗の形で）数が 〖[1]〗 にのぼる、数が 〖[1]〗 に達する	
@@ -32,7 +32,7 @@ kin	*	kin	kinpit	kinpit	transitive verb	to count <i>something</i>
 lata		lata			noun	person, people	
 lauzait		lauzait			transitive verb	to make <i>something</i>, to create <i>something</i>	
 leti		leti			special conjunction	-’s (possessive marker; creates a modifying phrase)	
-letit		letit			transitive verb	～を持つ、～を手に取る	
+letit		letit			transitive verb	to have <i>something</i>, to take hold of <i>something</i>, to obtain <i>something</i>, to take <i>something</i>, to get <i>something</i>	
 luc	¹	luc	lucit	LUCIT	transitive verb	to use <i>something</i>　　　　　　　　　　　　　　Note: this word is hardly ever used as an intransitive verb.	
 luc	²	luc			verb	to end　　　　　　　　　　　Note: this word is never used as a transitive verb.	
 lucuc	*	lucuc			verb	to end	
@@ -40,10 +40,10 @@ lucuc	*	lucuc	lucucit	lucucit	transitive verb	to end <i>something</i>
 lukup	*	lukup			noun	language	
 lukup	*	lukup			verb	to talk, to speak	
 lukup	*	lukup	lukupit	lukupit	transitive verb	to say <i>something</i>, to tell <i>something</i>	
-lukup	*	lukup	lukup-lukup	lukup-lukup	noun	文章、話し合い	
+lukup	*	lukup	lukup-lukup	lukup-lukup	noun	writing, discussion, message	
 mak	*	mak			preverbal auxiliary verb	<i>do</i> again, <i>do</i> once more	
-mak	*	mak	マㇰレティ	makleti	numeral	2, two	
-mak	*	mak	マㇰ マㇰ	mak-mak	preverbal auxiliary verb	繰り返し～する	
+mak	*	mak	makleti	makleti	numeral	2, two	
+mak	*	mak	mak-mak	mak-mak	preverbal auxiliary verb	repeatedly <i>do</i>	
 mi		mi			noun	I, me	
 mol	*	mol			special verb	to exist, to be present　　　　Note: this word is never followed by 〖leti〗 .	
 mol	*	mol			postverbal auxiliary verb	be <i>do</i>ing　　　Note: this word is rarely used in Ai’r	
@@ -52,12 +52,12 @@ molip	*	molip	molipleti	molipleti	adjective	nonexistent, not present
 nip	*	nip			verb	to disappear, to vanish	
 nip	*	nip			preverbal auxiliary verb	not <i>do</i>	
 nip	*	nip			interjection	no	
-nip	*	nip	nipit	nipit	transitive verb	～を拒む、～を無視する、～をなくす、～を取り除く、～を捨てる	
-nip	*	nip	nipleti	nipleti	numeral	0個の	
+nip	*	nip	nipit	nipit	transitive verb	to refuse <i>something</i>, to ignore <i>something</i>, to lose <i>something</i>, to remove <i>something</i>, to discard <i>something</i>	
+nip	*	nip	nipleti	nipleti	numeral	0, zero	
 nole		nole			noun	時、場合、（数詞を用いて、〖[1] nole〗 の形で）〖[1]〗回	
 nuxep	*	nuxep			adjective	small	
 nuxep	*	nuxep			noun	小島【小島】（地名）	
-nuxep	*	nuxep	nuxep-nuxep	NUXEP-NUXEP	adjective	微小な、わずかな	
+nuxep	*	nuxep	nuxep-nuxep	NUXEP-NUXEP	adjective	slight, tiny, meagre	
 o		o			conjunction for nouns	or	
 pac	*	pac			preverbal auxiliary verb	start to <i>do</i>	
 pac	*	pac			verb	to begin, to start	
