@@ -21,10 +21,11 @@ const vivliostyleConfig = {
     '10_04_EN_authors.html',
     '10_08_EN_linzklar_start.html',
     '10_10_EN_how_to_use_linzklar.html',
-    '10_11_EN_key_to_pronunciation.html',
+    '10_11_EN_linzklar_key_to_pronunciation.html',
     '11_01_EN_目四片_清字.html',
     '11_02_EN_grammar_linzklar_abridged.html',
     '14_01_EN_pmcp_start.html',
+    '15_05_EN_pmcp_key_to_pronunciation.html',
     '15_06_EN_目四片_島言.html',
 
     '30_03_JA_grand_title.html',

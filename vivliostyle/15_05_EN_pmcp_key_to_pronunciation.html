@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>目四片 言将机戦人等 網別清字言書</title>
+    <style>
+        body {
+            font-family: 'Times New Roman';
+            font-size: 13pt;
+            text-align: justify;
+            hyphens: auto;
+            line-height: 1.3;
+        }
+        
+        h3 {
+            font-size: calc(18pt * 1);
+            margin-bottom: 0.5em;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: calc(15pt * 1);
+            margin-bottom: 0.5em;
+        }
+
+        h5 {
+            font-size: calc(9pt * 1);
+            margin-top: 0.5em;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin: 0;
+            text-indent: 1em;
+        }
+
+        .linzklar-in-text {
+            font-size: inherit;
+            font-weight: normal;
+            font-family: "linzklar_rounded";
+            position: relative;
+            top: .15em;
+        }
+
+        .english-gloss {
+            font-variant-caps: all-small-caps;
+
+            /* gloss は英語でも Source Han Serif を強制 */
+            font-weight: bold;
+            font-family: "Source Han Serif Heavy";
+        }
+
+        .phonetics-two-col {
+            display: grid;
+            grid-template-columns: 0.75fr 1.25fr; 
+            column-gap: 2em;
+            break-inside: avoid;   
+        }
+
+        .phonetics-col {
+            break-inside: avoid;         
+            line-height: 1.3;
+        }
+
+        .phonetics-col .row {
+            display: grid;
+            grid-template-columns: 1.3em 1fr; /* symbol; description */
+            column-gap: 0.6em;
+            margin: 0.12em 0;
+        }
+
+        .pron-sample-column {
+            display: inline-block;
+            width: 1.3em;              
+            font-variant-ligatures: none; 
+        }
+
+        .row {
+            padding: 0.15em 0;
+        }
+
+        .phonetics-col .row2 {
+            display: grid;
+            grid-template-columns: 2.5em 1fr; /* symbol; description */
+            column-gap: 0.6em;
+            margin: 0.12em 0;
+        }
+
+        .row2 {
+            padding: 0.15em 0;
+        }
+
+        .row.gap {
+            height: 1em;
+        }
+
+        @page {
+            size: 128mm 182mm
+                /* JIS B6 */
+            ;
+            margin: 4% 10% 2% 10%;
+
+            @top-center {
+                content: counter(page);
+                font-family: "Times New Roman";
+                font-size: 14pt;
+            }
+        }
+
+        .pron-sample-column {
+            font-weight: bold;
+            font-family: "Crushed";
+            letter-spacing: 0.025em;
+            line-break: strict;
+        }
+
+        b>u{
+            text-underline-offset: 0.1em;
+        }
+
+        b>u.descender{
+            text-underline-offset: 0.27em;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>KEY TO PRONUNCIATION</h3>
+    
+    <div class="phonetics-two-col">
+  <section class="phonetics-col">
+    <h4>VOWELS</h4>
+    <div class="row"><span class="pron-sample-column" lang="en">A</span> <span>as in f<b><u>a</u></b>ther</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">E</span> <span>as in f<b><u>e</u></b>rry</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">I</span> <span>as in f<b><u>ee</u></b>d</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">O</span> <span>as in f<b><u>ou</u></b>r</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">U</span> <span>as in f<b><u>oo</u></b>d</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">AI</span> <span>as in <b><u class="descender">eye</u></b></span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">AU</span> <span>as in c<b><u>ow</u></b></span></div>
+  </section>
+
+  <section class="phonetics-col">
+    <h4>CONSONANTS</h4>
+    <div class="row"><span class="pron-sample-column" lang="en">B</span> <span>as in <b><u>b</u></b>ean</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">C</span> <span>as in <b><u>c</u></b>inema</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">D</span> <span>as in <b><u>d</u></b>og</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">G</span> <span>as in <b><u class="descender">g</u></b>one</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">H</span> <span>as in <b><u>h</u></b>arm</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">J</span> <span>as in <b><u class="descender">y</u></b>am</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">K</span> <span>as in <b><u>k</u></b>aya<b><u>k</u></b></span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">L</span> <span>as in <b><u>l</u></b>ong</span></div>
+    <div class="row"><span lang="en">&nbsp;&nbsp;&nbsp;or</span> <span>as in bu<b><u>tt</u></b>er (<i>with flapping</i>)</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">M</span> <span>as in <b><u>m</u></b>a’a<b><u>m</u></b></span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">N</span> <span>as in <b><u>kn</u></b>ow<b><u>n</u></b></span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">P</span> <span>as in <b><u class="descender">p</u></b>ee<b><u class="descender">p</u></b></span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">S</span> <span>as in <b><u>z</u></b>ero</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">T</span> <span>as in <b><u>t</u></b>eapo<b><u>t</u></b></span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">W</span> <span>as in <b><u>w</u></b>ay</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">X</span> <span>as in <b><u>sh</u></b>ow</span></div>
+    <div class="row"><span class="pron-sample-column" lang="en">Z</span> <span>as in pi<b><u>zz</u></b>a or <b><u>ch</u></b>urch</span></div>
+
+  </section>
+</div>
+    
+    
+</body>
+
+</html>
