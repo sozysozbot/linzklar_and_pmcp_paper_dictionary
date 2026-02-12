@@ -97,9 +97,9 @@ function get_linzklar_rounded(char) {
     return `<img src="linzklar_rounded_fixed_svgs/${char}.svg" class="linzklar_rounded_glyph">`;
 }
 
-function simple_entry(word, distinguisher, pmcp, pos, definition) {
-    if (!pos_list.includes(pos)) {
-        console.log(`Warning: ${pos} is not in pmcp_pos_list.txt \n\t\t(Encountered in ${word}${distinguisher}, ${pmcp})`);
+function simple_entry(word, distinguisher, pmcp, pos, definition, lang="JA") {
+    if (!pos_list[lang.toLowerCase()].includes(pos)) {
+        console.log(`Warning: ${pos} is not in pmcp_pos_list_${lang.toUpperCase()}.txt \n\t\t(Encountered in ${word}${distinguisher}, ${pmcp})`);
     }
 
     const definition_ = definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
@@ -111,9 +111,9 @@ function simple_entry(word, distinguisher, pmcp, pos, definition) {
 </div>`;
 }
 
-function entry_with_single_subentry(word, distinguisher, pmcp, subentry, definition, line_break_after_pos = true) {
-    if (!pos_list.includes(subentry.pos)) {
-        console.log(`Warning: ${subentry.pos} is not in pmcp_pos_list.txt \n\t\t(Encountered in ${word}${distinguisher}, ${pmcp} --> ${subentry.word}, ${subentry.pmcp})`);
+function entry_with_single_subentry(word, distinguisher, pmcp, subentry, definition, line_break_after_pos = true, lang="JA") {
+    if (!pos_list[lang.toLowerCase()].includes(subentry.pos)) {
+        console.log(`Warning: ${subentry.pos} is not in pmcp_pos_list_${lang.toUpperCase()}.txt \n\t\t(Encountered in ${word}${distinguisher}, ${pmcp} --> ${subentry.word}, ${subentry.pmcp})`);
     }
 
     const definition_ = definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
@@ -126,13 +126,13 @@ function entry_with_single_subentry(word, distinguisher, pmcp, subentry, definit
 </div>`;
 }
 
-function entry_with_multiple_subentries(word, distinguisher, pmcp, subentries) {
+function entry_with_multiple_subentries(word, distinguisher, pmcp, subentries, lang="JA") {
     return `<div class="entry">
     <span class="entry-word-ja" lang="ja">${word}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span><br>
     <div class="sub-entry">
 ${subentries.map(subentry => {
-        if (!pos_list.includes(subentry.pos)) {
-            console.log(`Warning: ${subentry.pos} is not in pmcp_pos_list.txt`);
+        if (!pos_list[lang.toLowerCase()].includes(subentry.pos)) {
+            console.log(`Warning: ${subentry.pos} is not in pmcp_pos_list_${lang.toUpperCase()}.txt`);
             console.log(`\t\t(Encountered in ${word}${distinguisher}, ${pmcp} --> ${subentry.word}, ${subentry.pmcp})`);
         }
 
@@ -156,10 +156,14 @@ ${subentries.map(subentry => {
 // | main ↓
 // --------------------------------------------------
 
-const pos_list = fs.readFileSync("pmcp_pos_list.txt", { encoding: 'utf-8' })
-    .split(/\r?\n/);
+const pos_list = {
+    ja: fs.readFileSync("pmcp_pos_list_JA.txt", { encoding: 'utf-8' })
+        .split(/\r?\n/),
+    en: fs.readFileSync("pmcp_pos_list_EN.txt", { encoding: 'utf-8' })
+        .split(/\r?\n/),
+};
 
-function build(行, file_name_prefix) {
+function build(行, file_name_prefix, lang) {
     const guide_words = JSON.parse(fs.readFileSync(`GUIDE_WORDS_${file_name_prefix}_${行}.json`, { encoding: 'utf-8' }));
 
     const entries_array =
@@ -178,16 +182,16 @@ function build(行, file_name_prefix) {
                 const [
                     entry_word_ja, distinguisher, entry_word_pmcp, sub_entry_word_ja, sub_entry_word_pmcp, entry_pos, entry_definition, line_break_after_pos] = row;
                 if (sub_entry_word_ja === "" && sub_entry_word_pmcp === "") {
-                    return simple_entry(entry_word_ja, distinguisher, entry_word_pmcp, entry_pos, entry_definition);
+                    return simple_entry(entry_word_ja, distinguisher, entry_word_pmcp, entry_pos, entry_definition, lang);
                 } else {
-                    return entry_with_single_subentry(entry_word_ja, distinguisher, entry_word_pmcp, { word: sub_entry_word_ja, pmcp: sub_entry_word_pmcp, pos: entry_pos }, entry_definition, line_break_after_pos !== "false");
+                    return entry_with_single_subentry(entry_word_ja, distinguisher, entry_word_pmcp, { word: sub_entry_word_ja, pmcp: sub_entry_word_pmcp, pos: entry_pos }, entry_definition, line_break_after_pos !== "false", lang);
                 }
             } else {
                 const { word, distinguisher, pmcp, subentries } = row;
                 return entry_with_multiple_subentries(word, distinguisher, pmcp, subentries.map(subentry => {
                     const [subentry_word_ja, subentry_word_pmcp, subentry_pos, subentry_definition] = subentry;
                     return { word: subentry_word_ja, pmcp: subentry_word_pmcp, pos: subentry_pos, definition: subentry_definition };
-                }));
+                }), lang);
             }
         });
 
@@ -225,4 +229,5 @@ ${entries.join('\n\n')}
 
 }
 
-build("目四片_島言", "35_06_JA");
+build("目四片_島言", "35_06_JA", "JA");
+build("目四片_島言", "15_06_EN", "EN");

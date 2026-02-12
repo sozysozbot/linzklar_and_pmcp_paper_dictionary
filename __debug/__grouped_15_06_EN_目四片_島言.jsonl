@@ -1,0 +1,45 @@
+["ail","","ail","","","noun","Ai’r (ethnicity; country)",""]
+["at","","at","","","conjunction for nouns","and",""]
+["auc","","auc","","","noun","all, everything",""]
+{"multiple":true,"word":"belpic","distinguisher":"","pmcp":"belpic","subentries":[["","","noun","遊び、遊戯",""],["","","verb","遊ぶ",""],["belpicit","belpicit","transitive verb","to play <i>something</i>",""]]}
+["cene","","cene","","","preverbal auxiliary verb","can <i>do</i>, be able to <i>do</i>",""]
+{"multiple":true,"word":"cet","distinguisher":"","pmcp":"cet","subentries":[["","","noun suffix","多数性を示す接辞",""],["","","preverbal auxiliary verb","とても",""],["cetit","cetit","transitive verb","～を増やす",""],["cetleti","cetleti","adjective","many, much, a lot of",""]]}
+["ci","","ci","","","noun","それ、かれ、あれ",""]
+{"multiple":true,"word":"co","distinguisher":"","pmcp":"co","subentries":[["","","noun","you",""],["coleti","coleti","adjective","your, yours",""]]}
+["cul","","cul","","","noun","method, tool, way",""]
+["delu","","delu","","","preverbal auxiliary verb","need to <i>do</i>, should <i>do</i>",""]
+["e","","e","","","special verb","to be",""]
+{"multiple":true,"word":"et","distinguisher":"","pmcp":"et","subentries":[["","","noun","other, another",""],["etleti","etleti","adjective","other, another",""]]}
+["it","","it","","","transitive verb","to do <i>something</i>",""]
+["jo","","jo","","","preposition","～において、～へ、～から、～で、～によって",""]
+["julo","","julo","","","noun","thing, stuff",""]
+{"multiple":true,"word":"ka","distinguisher":"¹","pmcp":"ka","subentries":[["","","noun","this, these",""],["kaleti","kaleti","adjective","this, these",""]]}
+{"multiple":true,"word":"ka","distinguisher":"²","pmcp":"ka","subentries":[["kaleti","kaleti","numeral","2, two　　Note: only used when it directly follows another numeral",""]]}
+["kije","","kije","","","postverbal auxiliary verb","主語へ向かう動作の方向を示す",""]
+["kile","","kile","","","verb","to come",""]
+{"multiple":true,"word":"kin","distinguisher":"","pmcp":"kin","subentries":[["","","noun","value, number, score",""],["","","verb","（〖kin jo [1]〗の形で）数が 〖[1]〗 にのぼる、数が 〖[1]〗 に達する",""],["kinpit","kinpit","transitive verb","to count <i>something</i>",""]]}
+["lata","","lata","","","noun","person, people",""]
+["lauzait","","lauzait","","","transitive verb","to make <i>something</i>, to create <i>something</i>",""]
+["leti","","leti","","","special conjunction","-’s (possessive marker; creates a modifying phrase)",""]
+["letit","","letit","","","transitive verb","～を持つ、～を手に取る",""]
+["luc","¹","luc","lucit","LUCIT","transitive verb","to use <i>something</i>　　　　　　　　　　　　　　Note: this word is hardly ever used as an intransitive verb.",""]
+["luc","²","luc","","","verb","to end　　　　　　　　　　　Note: this word is never used as a transitive verb.",""]
+{"multiple":true,"word":"lucuc","distinguisher":"","pmcp":"lucuc","subentries":[["","","verb","to end",""],["lucucit","lucucit","transitive verb","to end <i>something</i>",""]]}
+{"multiple":true,"word":"lukup","distinguisher":"","pmcp":"lukup","subentries":[["","","noun","language",""],["","","verb","to talk, to speak",""],["lukupit","lukupit","transitive verb","to say <i>something</i>, to tell <i>something</i>",""],["lukup-lukup","lukup-lukup","noun","文章、話し合い",""]]}
+{"multiple":true,"word":"mak","distinguisher":"","pmcp":"mak","subentries":[["","","preverbal auxiliary verb","<i>do</i> again, <i>do</i> once more",""],["マㇰレティ","makleti","numeral","2, two",""],["マㇰ マㇰ","mak-mak","preverbal auxiliary verb","繰り返し～する",""]]}
+["mi","","mi","","","noun","I, me",""]
+{"multiple":true,"word":"mol","distinguisher":"","pmcp":"mol","subentries":[["","","special verb","to exist, to be present　　　　Note: this word is never followed by 〖leti〗 .",""],["","","postverbal auxiliary verb","be <i>do</i>ing　　　Note: this word is rarely used in Ai’r",""]]}
+{"multiple":true,"word":"molip","distinguisher":"","pmcp":"molip","subentries":[["","","special verb","to not exist, to be nonexistent, to not be present",""],["molipleti","molipleti","adjective","nonexistent, not present",""]]}
+{"multiple":true,"word":"nip","distinguisher":"","pmcp":"nip","subentries":[["","","verb","to disappear, to vanish",""],["","","preverbal auxiliary verb","not <i>do</i>",""],["","","interjection","no",""],["nipit","nipit","transitive verb","～を拒む、～を無視する、～をなくす、～を取り除く、～を捨てる",""],["nipleti","nipleti","numeral","0個の",""]]}
+["nole","","nole","","","noun","時、場合、（数詞を用いて、〖[1] nole〗 の形で）〖[1]〗回",""]
+{"multiple":true,"word":"nuxep","distinguisher":"","pmcp":"nuxep","subentries":[["","","adjective","small",""],["","","noun","小島【小島】（地名）",""],["nuxep-nuxep","NUXEP-NUXEP","adjective","微小な、わずかな",""]]}
+["o","","o","","","conjunction for nouns","or",""]
+{"multiple":true,"word":"pac","distinguisher":"","pmcp":"pac","subentries":[["","","preverbal auxiliary verb","start to <i>do</i>",""],["","","verb","to begin, to start",""],["","","noun","beginning, start",""]]}
+{"multiple":true,"word":"pan","distinguisher":"","pmcp":"pan","subentries":[["","","preverbal auxiliary verb","一人で、単独で、孤立して",""],["panit","panit","transitive verb","to unite <i>something</i>, to unify <i>something</i>",""],["panleti","panleti","numeral","1, one",""],["panleti","panleti","adjective","same, identical",""]]}
+{"multiple":true,"word":"panka","distinguisher":"","pmcp":"panka","subentries":[["","","verb","to be good",""],["","","preverbal auxiliary verb","うまく",""],["pankaleti","pankaleti","adjective","good",""]]}
+{"multiple":true,"word":"pemecepe","distinguisher":"","pmcp":"pemecepe","subentries":[["","","noun","東諸島共和国連合、ペメセペ（自治体名）",""],["pemecepe lukup","pemecepe lukup","noun","Pemecepe Creole",""],["pemecepe lujot","pemecepe lujot","noun","Pemecepe alphabet",""]]}
+["pi","","pi","","","conjunction for sentences","～して、～したが、～すると",""]
+["poto","","poto","","","noun","place, location",""]
+{"multiple":true,"word":"tude","distinguisher":"","pmcp":"tude","subentries":[["","","verb","移動する",""],["","","postverbal auxiliary verb","主語から離れる動作の方向を示す",""],["tudeit","tudeit","transitive verb","～を動かす、～を移動させる",""]]}
+{"multiple":true,"word":"xel","distinguisher":"","pmcp":"xel","subentries":[["xelit","XELIT","transitive verb","to look at <i>something</i>, to see <i>something</i>, to watch <i>something</i>",""],["xelit tude","XELIT TUDE","transitive verb","to inspect <i>something</i>",""],["xelit kije","XELIT KIJE","transitive verb","to discover <i>something</i>",""]]}
+{"multiple":true,"word":"xep","distinguisher":"","pmcp":"xep","subentries":[["","","adjective","large",""],["xep u","xep u","noun","xenonen-u (name of a letter in the Lipāshe alphabet)",""],["xepit","XEPIT","verb","to enlarge, to expand",""],["xep-xep","XEP-XEP","adjective","huge, enormous, tremendous",""]]}
