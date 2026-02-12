@@ -85,6 +85,14 @@ header {
     float-reference: page;
 }
 
+.english-gloss {
+    font-variant-caps: all-small-caps;
+
+    /* gloss は英語でも Source Han Serif を強制 */
+    font-weight: bold;
+    font-family: "Source Han Serif Heavy";
+}
+
 @page {
     size: 128mm 182mm
         /* JIS B6 */

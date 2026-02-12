@@ -70,9 +70,16 @@ function group_asterisk(entries_) {
     return entries_grouped;
 }
 
-function 墨付きカッコ書き換え(input_string) {
+function 墨付きカッコ書き換え(input_string, lang="JA") {
+    if (lang.toLowerCase() !== "en") {
     const images = [... `(${input_string})`].map(get_linzklar_rounded).join("");
     return ` ${images}【${input_string}】`;
+    } else if (input_string === "小島") {
+        const images = [... `(${input_string})`].map(get_linzklar_rounded).join("");
+        return ` ${images}【<span class="english-gloss">SMALL</span> : <span class="english-gloss">ISLAND</span>】`;
+    } else {
+        throw new Error(`墨付きカッコ書き換え is not implemented for lang=${lang} and input_string=${input_string}`);
+    }
 }
 
 function 白抜きカッコ書き換え(input_string) {
@@ -102,7 +109,7 @@ function simple_entry(word, distinguisher, pmcp, pos, definition, lang="JA") {
         console.log(`Warning: ${pos} is not in pmcp_pos_list_${lang.toUpperCase()}.txt \n\t\t(Encountered in ${word}${distinguisher}, ${pmcp})`);
     }
 
-    const definition_ = definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
+    const definition_ = definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1, lang)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
 
     return `<div class="entry">
     <span class="entry-word-ja" lang="ja">${word}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span> <span
@@ -116,7 +123,7 @@ function entry_with_single_subentry(word, distinguisher, pmcp, subentry, definit
         console.log(`Warning: ${subentry.pos} is not in pmcp_pos_list_${lang.toUpperCase()}.txt \n\t\t(Encountered in ${word}${distinguisher}, ${pmcp} --> ${subentry.word}, ${subentry.pmcp})`);
     }
 
-    const definition_ = definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
+    const definition_ = definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1, lang)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
     return `<div class="entry">
     <span class="entry-word-ja" lang="ja">${word}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span><br>
     <div class="sub-entry">
@@ -136,7 +143,7 @@ ${subentries.map(subentry => {
             console.log(`\t\t(Encountered in ${word}${distinguisher}, ${pmcp} --> ${subentry.word}, ${subentry.pmcp})`);
         }
 
-        const definition_ = subentry.definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
+        const definition_ = subentry.definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1, lang)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
 
         if (subentry.word === "" && subentry.pmcp === "") {
             /* 直前の見出し語にぶら下がり、音写と PMCP の欄なしで掲載 */
