@@ -1,6 +1,7 @@
 :root {
     column-count: 2;
     --scale: 1;
+    --scale-tnr: 1.1;
 }
 
 .entry-word-ja {
@@ -8,6 +9,14 @@
     font-size: calc(12pt * var(--scale));
     font-weight: bold;
     font-family: "Source Han Serif Heavy";
+}
+
+.entry-word-ja[lang="en"] {
+    /* 親見出し（英語） */
+    font-size: calc(12pt * var(--scale-tnr));
+    font-weight: bold;
+    font-family: "Crushed";
+    letter-spacing: 0.025em;
 }
 
 .entry-word-pmcp {
@@ -29,6 +38,13 @@
     font-weight: bold;
 }
 
+.entry-word-POS[lang="en"] {
+    /* 親見出し（品詞） */
+    font-size: calc(9pt * var(--scale-tnr));
+    font-family: "Times New Roman";
+    font-weight: bold;
+}
+
 .sub-entry {
     margin-left: 5mm;
 }
@@ -39,6 +55,15 @@
     font-weight: bold;
     font-family: "Source Han Serif Heavy";
 }
+
+.sub-entry-word-ja[lang="en"] {
+    /* 子見出し（日本語） */
+    font-size: calc(9pt * var(--scale-tnr));
+    font-weight: bold;
+    font-family: "Crushed";
+    letter-spacing: 0.025em;
+}
+
 
 .sub-entry-word-pmcp {
     /* 子見出し（PMCP） */
@@ -54,10 +79,24 @@
     font-weight: bold;
 }
 
+.sub-entry-word-POS[lang="en"] {
+    /* 子見出し（品詞） */
+    font-size: calc(9pt * var(--scale-tnr));
+    font-family: "Times New Roman";
+    font-weight: bold;
+}
+
 .sub-entry-definition {
     /* 子見出しの語釈 */
     font-size: calc(9pt * var(--scale));
     font-family: "Source Han Serif";
+    line-height: 1.05;
+}
+
+.sub-entry-definition[lang="en"] {
+    /* 子見出しの語釈 */
+    font-size: calc(9pt * var(--scale-tnr));
+    font-family: "Times New Roman";
     line-height: 1.05;
 }
 
@@ -66,6 +105,14 @@
     /* 語釈 */
     font-size: calc(9pt * var(--scale));
     font-family: "Source Han Serif";
+    margin-left: 5mm;
+    line-height: 1.05;
+}
+
+.definition[lang="en"] {
+    /* 語釈 */
+    font-size: calc(9pt * var(--scale-tnr));
+    font-family: "Times New Roman";
     margin-left: 5mm;
     line-height: 1.05;
 }

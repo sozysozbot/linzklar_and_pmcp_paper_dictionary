@@ -48,6 +48,10 @@ jobs:
         run: |
           curl -L -o fonts/linzklar_rounded.ttf "https://github.com/yasusho/linmarn_font_project/raw/refs/heads/master/fonts/rounded/linzklar_rounded.ttf"
 
+      - name: Crushed のダウンロード
+        run: |
+          curl -L -o fonts/Crushed.ttf "https://github.com/google/fonts/raw/refs/heads/main/apache/crushed/Crushed-Regular.ttf"
+
       - name: フォントのインストールとレジストリ登録
         shell: cmd
         run: |
@@ -61,6 +65,7 @@ jobs:
           reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" /v "Xedixel (TrueType)" /t REG_SZ /d "xedixel.ttf" /f
           reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" /v "Acil Lujot (TrueType)" /t REG_SZ /d "acil_lujot.ttf" /f
           reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" /v "Linzklar Rounded (TrueType)" /t REG_SZ /d "linzklar_rounded.ttf" /f
+          reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" /v "Crushed (TrueType)" /t REG_SZ /d "Crushed.ttf" /f
 
       - name: Vivliostyle CLI のインストール
         run: |

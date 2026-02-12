@@ -112,9 +112,9 @@ function simple_entry(word, distinguisher, pmcp, pos, definition, lang="JA") {
     const definition_ = definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1, lang)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
 
     return `<div class="entry">
-    <span class="entry-word-ja" lang="ja">${word}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span> <span
-        class="entry-word-POS" lang="ja">[${pos}]</span><br>
-    <div class="definition" lang="ja">${definition_}</div>
+    <span class="entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_en(word, lang)}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span> <span
+        class="entry-word-POS" lang="${lang.toLowerCase()}">[${pos}]</span><br>
+    <div class="definition" lang="${lang.toLowerCase()}">${definition_}</div>
 </div>`;
 }
 
@@ -125,17 +125,21 @@ function entry_with_single_subentry(word, distinguisher, pmcp, subentry, definit
 
     const definition_ = definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1, lang)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
     return `<div class="entry">
-    <span class="entry-word-ja" lang="ja">${word}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span><br>
+    <span class="entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_en(word, lang)}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span><br>
     <div class="sub-entry">
-        <span class="sub-entry-word-ja" lang="ja">${subentry.word}</span> <span class="sub-entry-word-pmcp">${subentry.pmcp}</span>
-        <span class="sub-entry-word-POS" lang="ja">[${subentry.pos}]</span>${line_break_after_pos ? '<br>' : ' '}<span class="sub-entry-definition" lang="ja">${definition_}</span>
+        <span class="sub-entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_en(subentry.word, lang)}</span> <span class="sub-entry-word-pmcp">${subentry.pmcp}</span>
+        <span class="sub-entry-word-POS" lang="${lang.toLowerCase()}">[${subentry.pos}]</span>${line_break_after_pos ? '<br>' : ' '}<span class="sub-entry-definition" lang="${lang.toLowerCase()}">${definition_}</span>
     </div>
 </div>`;
 }
 
+function capitalize_if_en(word, lang) {
+    return lang.toLowerCase() === "en" ? word.toUpperCase() + "\u200a" : word;
+}
+ 
 function entry_with_multiple_subentries(word, distinguisher, pmcp, subentries, lang="JA") {
     return `<div class="entry">
-    <span class="entry-word-ja" lang="ja">${word}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span><br>
+    <span class="entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_en(word, lang)}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span><br>
     <div class="sub-entry">
 ${subentries.map(subentry => {
         if (!pos_list[lang.toLowerCase()].includes(subentry.pos)) {
@@ -147,11 +151,11 @@ ${subentries.map(subentry => {
 
         if (subentry.word === "" && subentry.pmcp === "") {
             /* 直前の見出し語にぶら下がり、音写と PMCP の欄なしで掲載 */
-            return `        <span class="sub-entry-word-POS" lang="ja">[${subentry.pos}]</span> <span class="sub-entry-definition" lang="ja">${definition_}</span><br>`;
+            return `        <span class="sub-entry-word-POS" lang="${lang.toLowerCase()}">[${subentry.pos}]</span> <span class="sub-entry-definition" lang="${lang.toLowerCase()}">${definition_}</span><br>`;
         }
 
-        return `        <span class="sub-entry-word-ja" lang="ja">${subentry.word}</span> <span class="sub-entry-word-pmcp">${subentry.pmcp}</span>
-        <span class="sub-entry-word-POS" lang="ja">[${subentry.pos}]</span> <span class="sub-entry-definition" lang="ja">${definition_}</span><br>`;
+        return `        <span class="sub-entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_en(subentry.word, lang)}</span> <span class="sub-entry-word-pmcp">${subentry.pmcp}</span>
+        <span class="sub-entry-word-POS" lang="${lang.toLowerCase()}">[${subentry.pos}]</span> <span class="sub-entry-definition" lang="${lang.toLowerCase()}">${definition_}</span><br>`;
     }
     ).join('\n')}
     </div>
