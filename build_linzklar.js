@@ -195,7 +195,7 @@ function gen_entry_of_single_char({ linzklar, lang, pronunciation_, definitions,
     const entry_word_transcription = (() => {
         const chars_including_variants = [linzklar, ... new Set([... (variants_官字 ?? []), ...(variants_風字 ?? [])])];
 
-        return `<span class="entry-word-transcription" lang="ja">${chars_including_variants.map(c => lang.toLowerCase() === "en" ? `【${english_gloss_of_char(c)}】` : `【${c}】`).join("")
+        return `<span class="entry-word-transcription" lang="${lang.toLowerCase()}">${chars_including_variants.map(c => lang.toLowerCase() === "en" ? `【${english_gloss_of_char(c)}】` : `【${c}】`).join("")
             }</span>`;
     })();
 

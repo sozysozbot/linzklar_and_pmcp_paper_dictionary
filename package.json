@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
+    "@vivliostyle/cli": "^8.20.0",
     "node-fetch": "^3.3.2",
     "pekzep_syllable": "github:jurliyuuri/pekzep_syllable"
   }
