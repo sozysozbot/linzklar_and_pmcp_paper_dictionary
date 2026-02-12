@@ -14,18 +14,18 @@
 
         h3 {
             text-align: center;
-            font-size: calc(15pt * 0.93);
+            font-size: calc(15pt * 1);
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
 
         h4 {
-            font-size: calc(12pt * 0.93);
+            font-size: calc(12pt * 1);
             margin-bottom: 0;
         }
 
         h5 {
-            font-size: calc(9pt * 0.93);
+            font-size: calc(9pt * 1);
             margin-top: 1em;
             margin-bottom: 0;
         }
@@ -42,6 +42,15 @@
             position: relative;
             top: .15em;
         }
+
+        .english-gloss {
+            font-variant-caps: all-small-caps;
+
+            /* gloss は英語でも Source Han Serif を強制 */
+            font-weight: bold;
+            font-family: "Source Han Serif Heavy";
+        }
+
 
         @page {
             size: 128mm 182mm
@@ -68,12 +77,9 @@
         </div>
         <p>Since this dictionary is an abridgement from <i>Japan Cetkaik Association’s Essential Dictionary of Lanermic Logograms</i>, which in turn lists logograms in the <span class="linzklar-in-text">二引形撃字機</span> order, the ordering is completely inherited from the original dictionary.
         </p>
-    <div style="color: red; font-family: 'Source Han Serif';">
-        <h5>1-3. 漢字転写</h5>
-        <p>燐字文化に対する日本語話者の親近感を醸成する目的で、アイル共和国文化省対外広報処日本語部署はそれぞれの燐字の字体ごとに漢字をあてがい、「漢字転写」を定めている。（一例を挙げると、<span
-                class="linzklar-in-text">机戦</span>という語を「机戦」と表記して「きせん」と読むといった行為は、この漢字転写に基づくものである。）日本語話者にとって字の意味や文の意味を概括する上で極めて有用であることを鑑み、この辞書では漢字転写を墨付きカッコの中に入れて表示することとした。
+        <h5>1-3. English gloss</h5>
+        <p>To foster familiarity with Lanermic logograms, we have provided English glosses for each logograms appearing in the dictionary. To give an example, <span class="linzklar-in-text">木紙遊術</span> <b style="font-family: 'Source Han Serif Heavy'; font-size: smaller">hup1 nin1 tu2 sit1</b> ‘board game’ is denoted as【<span class="english-gloss">TREE</span> : <span class="english-gloss">PAPER</span> : <span class="english-gloss">GAME</span> : <span class="english-gloss">METHOD</span>】, roughly approximating what each logogram means through English words.
         </p>
-        </div>
     <h5>1-4. Pekzep readings and how they are denoted</h5>
     <p>While Pekzep isn’t the only language that uses Lanermic logograms, and while Pekzep is not a language that solely uses Lanermic logograms, the practice of reading Lanermic logogram sequences aloud in Pekzep phonetics without interpreting parts of speech is widespread. Therefore, for characters with stable conventional Pekzep readings, those readings are provided.</p>
     <h4>2. Parts of speech</h4>
@@ -86,7 +92,7 @@
     </p>
     <h5>2-3. Divisible compound words</h5>
     <p>
-        Numerous instances exist where multiple characters combine to form a single meaning, yet the constituent characters do not necessarily appear consecutively within the text, allowing space for other words to intervene. Whilst it would have been possible to adopt a policy of not recognising these as words and omitting them from the dictionary, grasping these kinds of ‘divisible compound words’ is indispensable for a thorough linguistic understanding of how sentences written in Lanermic logograms behave. We therefore endeavoured to include them proactively. Where each separable part can be clearly identified as a constituent element within a sentence, it is denoted as such, e.g., [verb + object].
+        Numerous instances exist where multiple characters combine to form a single meaning, yet the constituent characters do not necessarily appear consecutively within the text, allowing other words to intervene between them. Whilst it would have been possible to adopt a policy of not recognising these as words and omitting them from the dictionary, grasping these kinds of ‘divisible compound words’ is indispensable for a thorough linguistic understanding of how sentences written in Lanermic logograms behave. We therefore endeavoured to include them proactively. Where each separable part can be clearly identified as a constituent element within a sentence, it is denoted as such, e.g., [verb + object].
     </p>
     <div style="color: red; font-family: 'Source Han Serif';">
 
