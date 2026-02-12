@@ -5,37 +5,32 @@
         background-image: url("爪見出し/目四片_島言_left.png");
         background-size: 483.8px 687.9px;
         background-repeat: no-repeat;
-        @top-left { font-family: "M+ 1p Heavy"; font-size: 14pt; } /* 左ページでは左の柱見出しのみ */
-        @top-right { font-family: "M+ 1p Heavy"; font-size: 0pt; }
+        @top-left { font-family: "Crushed"; font-size: 14pt; } /* 左ページでは左の柱見出しのみ */
+        @top-right { font-family: "Crushed"; font-size: 0pt; }
     }
 
     @page:right { 
         background-image: url("爪見出し/目四片_島言_right.png");
         background-size: 483.8px 687.9px;
         background-repeat: no-repeat;
-        @top-left { font-family: "M+ 1p Heavy"; font-size: 0pt; }
-        @top-right { font-family: "M+ 1p Heavy"; font-size: 14pt; }  /* 右ページでは右の柱見出しのみ */
+        @top-left { font-family: "Crushed"; font-size: 0pt; }
+        @top-right { font-family: "Crushed"; font-size: 14pt; }  /* 右ページでは右の柱見出しのみ */
     }
     
     /* それぞれのページ指定では柱見出しを両側に指定しておき、上記ルールにより片方だけ潰す */
     @page:nth(1) {
-        @top-left { content: "ail"; }
-        @top-right { content: "lata"; }
+        @top-left { content: "AIL"; }
+        @top-right { content: "LATA"; }
     }
 
     @page:nth(2) {
-        @top-left { content: "lauzait"; }
-        @top-right { content: "nip"; }
+        @top-left { content: "LAUZAIT"; }
+        @top-right { content: "NIP"; }
     }
 
     @page:nth(3) {
-        @top-left { content: "nole"; }
-        @top-right { content: "xel"; }
-    }
-
-    @page:nth(4) {
-        @top-left { content: "xep"; }
-        @top-right { content: "xep"; }
+        @top-left { content: "NOLE"; }
+        @top-right { content: "XEP"; }
     }
 </style>
 

@@ -174,7 +174,7 @@ const pos_list = {
         .split(/\r?\n/),
 };
 
-function build(行, file_name_prefix, lang) {
+function build(行, file_name_prefix, lang, 柱見出しのフォント) {
     const guide_words = JSON.parse(fs.readFileSync(`GUIDE_WORDS_${file_name_prefix}_${行}.json`, { encoding: 'utf-8' }));
 
     const entries_array =
@@ -213,16 +213,16 @@ function build(行, file_name_prefix, lang) {
         background-image: url("爪見出し/${行}_left.png");
         background-size: 483.8px 687.9px;
         background-repeat: no-repeat;
-        @top-left { font-family: "M+ 1p Heavy"; font-size: 14pt; } /* 左ページでは左の柱見出しのみ */
-        @top-right { font-family: "M+ 1p Heavy"; font-size: 0pt; }
+        @top-left { font-family: "${柱見出しのフォント}"; font-size: 14pt; } /* 左ページでは左の柱見出しのみ */
+        @top-right { font-family: "${柱見出しのフォント}"; font-size: 0pt; }
     }
 
     @page:right { 
         background-image: url("爪見出し/${行}_right.png");
         background-size: 483.8px 687.9px;
         background-repeat: no-repeat;
-        @top-left { font-family: "M+ 1p Heavy"; font-size: 0pt; }
-        @top-right { font-family: "M+ 1p Heavy"; font-size: 14pt; }  /* 右ページでは右の柱見出しのみ */
+        @top-left { font-family: "${柱見出しのフォント}"; font-size: 0pt; }
+        @top-right { font-family: "${柱見出しのフォント}"; font-size: 14pt; }  /* 右ページでは右の柱見出しのみ */
     }
     
     /* それぞれのページ指定では柱見出しを両側に指定しておき、上記ルールにより片方だけ潰す */
@@ -240,5 +240,5 @@ ${entries.join('\n\n')}
 
 }
 
-build("目四片_島言", "35_06_JA", "JA");
-build("目四片_島言", "15_06_EN", "EN");
+build("目四片_島言", "35_06_JA", "JA", "M+ 1p Heavy");
+build("目四片_島言", "15_06_EN", "EN", "Crushed");
