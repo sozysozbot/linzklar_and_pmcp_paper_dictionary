@@ -17,6 +17,7 @@ const vivliostyleConfig = {
     // },
     '0_01_grand_title.html',
     '0_02_03_foreword.html',
+    '0_06_07_pmcp_map.html',
     '10_03_EN_grand_title.html',
     '10_04_EN_authors.html',
     '10_08_EN_linzklar_start.html',
