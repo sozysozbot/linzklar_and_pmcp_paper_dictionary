@@ -38,11 +38,12 @@ const vivliostyleConfig = {
     '20_05_ZH_grand_index.html',
     '20_08_ZH_linzklar_start.html',
     '20_10_ZH_how_to_use_linzklar.html',
+    '20_11_ZH_linzklar_key_to_pronunciation.html',
     '21_01_ZH_目四片_清字.html',
     '21_02_ZH_grammar_linzklar_abridged.html',
     '24_01_ZH_pmcp_start.html',
     '24_02_ZH_how_to_use_pmcp.html',
-    '24_03_ZH_pmcp_50on.html',
+    '25_05_ZH_pmcp_key_to_pronunciation.html',
     '25_06_ZH_目四片_島言.html',
     '26_06_ZH_grammar_pmcp_abridged.html',
 
