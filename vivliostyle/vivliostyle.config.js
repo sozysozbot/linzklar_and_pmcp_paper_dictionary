@@ -29,6 +29,7 @@ const vivliostyleConfig = {
     '14_02_EN_how_to_use_pmcp.html',
     '15_05_EN_pmcp_key_to_pronunciation.html',
     '15_06_EN_目四片_島言.html',
+    '16_06_EN_grammar_pmcp_abridged.html',
 
     '30_03_JA_grand_title.html',
     '30_04_JA_authors.html',
