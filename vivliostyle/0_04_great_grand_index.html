@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>目四片 言将机戦人等 網別言書</title>
+    <style>
+        body {
+            font-size: 13pt;
+            line-height: 1.7;
+        }
+
+        [lang="en"] {
+            font-family: "Times New Roman";
+        }
+
+        [lang="zh-CN"] {
+            font-family: "Source Han Serif";
+        }
+
+        [lang="ja"] {
+            font-family: "Source Han Serif";
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 17pt;
+            margin-top: -0.5em;
+            margin-bottom: 0.5em;
+        }
+
+        h4 {
+            font-weight: bold;
+            font-size: inherit;
+            padding: 3mm 0 0 0;
+            margin: 0;
+        }
+
+        .linzklar-in-text {
+            font-size: inherit;
+            font-weight: normal;
+            font-family: "linzklar_rounded";
+            position: relative;
+            top: .1em;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: currentColor;
+            display: inline-flex;
+            width: 100%;
+        }
+
+        a::before {
+            border-bottom: 2px dotted;
+            content: '';
+            order: 1;
+            flex: auto;
+        }
+
+        a::after {
+            text-align: right;
+            content: target-counter(attr(href), page);
+            align-self: flex-end;
+            flex: none;
+            order: 2;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul ul {
+            padding-left: 1em;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+
+        h3+ul {
+            margin-top: 0.3em;
+        }
+
+        ul.toplevel > li {
+            margin-bottom: 0.7em;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><span lang="en">Table of Contents</span> / <span lang="zh-CN">篇目</span> / <span lang="ja">目次</span></h2>
+    <ul class="toplevel">
+        <li><a href="0_02_03_foreword.html"><span lang="en">Preface</span> / <span lang="zh-CN">序言</span> / <span
+                    lang="ja">まえがき</span></a></li>
+        <li><a href="0_06_07_pmcp_map.html"><span lang="en">Map</span> / <span lang="zh-CN">地图</span> / <span
+                    lang="ja">地図</span></a></li>
+        <li><a href="10_03_EN_grand_title.html"><span lang="en">English Edition</span></a>
+            <ul>
+                <li><a href="10_08_EN_linzklar_start.html"><span lang="en">Dictionary of Lanermic Logograms</span></a></li>
+                <li><a href="14_01_EN_pmcp_start.html"><span lang="en">Dictionary of Pemecepe Creole</span></a></li>
+            </ul>
+        </li>
+        <li><a href="30_03_JA_grand_title.html"><span lang="ja">日本語版</span></a>
+            <ul>
+                <li><a href="30_08_JA_linzklar_start.html"><span lang="ja">燐字辞書</span></a></li>
+                <li><a href="34_01_JA_pmcp_start.html"><span lang="ja">東島通商語辞書</span></a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
