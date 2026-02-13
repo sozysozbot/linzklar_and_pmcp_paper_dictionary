@@ -112,7 +112,7 @@ function simple_entry(word, distinguisher, pmcp, pos, definition, lang="JA") {
     const definition_ = definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1, lang)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
 
     return `<div class="entry">
-    <span class="entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_en(word, lang)}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span> <span
+    <span class="entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_not_ja(word, lang)}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span> <span
         class="entry-word-POS" lang="${lang.toLowerCase()}">[${pos}]</span><br>
     <div class="definition" lang="${lang.toLowerCase()}">${definition_}</div>
 </div>`;
@@ -125,21 +125,21 @@ function entry_with_single_subentry(word, distinguisher, pmcp, subentry, definit
 
     const definition_ = definition.replaceAll(/【([^【】]+)】/g, (_, p1) => 墨付きカッコ書き換え(p1, lang)).replaceAll(/〖([^〖〗]+)〗/g, (_, p1) => 白抜きカッコ書き換え(p1));
     return `<div class="entry">
-    <span class="entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_en(word, lang)}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span><br>
+    <span class="entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_not_ja(word, lang)}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span><br>
     <div class="sub-entry">
-        <span class="sub-entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_en(subentry.word, lang)}</span> <span class="sub-entry-word-pmcp">${subentry.pmcp}</span>
+        <span class="sub-entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_not_ja(subentry.word, lang)}</span> <span class="sub-entry-word-pmcp">${subentry.pmcp}</span>
         <span class="sub-entry-word-POS" lang="${lang.toLowerCase()}">[${subentry.pos}]</span>${line_break_after_pos ? '<br>' : ' '}<span class="sub-entry-definition" lang="${lang.toLowerCase()}">${definition_}</span>
     </div>
 </div>`;
 }
 
-function capitalize_if_en(word, lang) {
-    return lang.toLowerCase() === "en" ? word.toUpperCase() + "\u200a" : word;
+function capitalize_if_not_ja(word, lang) {
+    return lang.toLowerCase() !== "ja" ? word.toUpperCase() + "\u200a" : word;
 }
  
 function entry_with_multiple_subentries(word, distinguisher, pmcp, subentries, lang="JA") {
     return `<div class="entry">
-    <span class="entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_en(word, lang)}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span><br>
+    <span class="entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_not_ja(word, lang)}${distinguisher}</span> <span class="entry-word-pmcp">${pmcp}</span><br>
     <div class="sub-entry">
 ${subentries.map(subentry => {
         if (!pos_list[lang.toLowerCase()].includes(subentry.pos)) {
@@ -154,7 +154,7 @@ ${subentries.map(subentry => {
             return `        <span class="sub-entry-word-POS" lang="${lang.toLowerCase()}">[${subentry.pos}]</span> <span class="sub-entry-definition" lang="${lang.toLowerCase()}">${definition_}</span><br>`;
         }
 
-        return `        <span class="sub-entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_en(subentry.word, lang)}</span> <span class="sub-entry-word-pmcp">${subentry.pmcp}</span>
+        return `        <span class="sub-entry-word-ja" lang="${lang.toLowerCase()}">${capitalize_if_not_ja(subentry.word, lang)}</span> <span class="sub-entry-word-pmcp">${subentry.pmcp}</span>
         <span class="sub-entry-word-POS" lang="${lang.toLowerCase()}">[${subentry.pos}]</span> <span class="sub-entry-definition" lang="${lang.toLowerCase()}">${definition_}</span><br>`;
     }
     ).join('\n')}
@@ -171,6 +171,8 @@ const pos_list = {
     ja: fs.readFileSync("pmcp_pos_list_JA.txt", { encoding: 'utf-8' })
         .split(/\r?\n/),
     en: fs.readFileSync("pmcp_pos_list_EN.txt", { encoding: 'utf-8' })
+        .split(/\r?\n/),
+    zh: fs.readFileSync("pmcp_pos_list_ZH.txt", { encoding: 'utf-8' })
         .split(/\r?\n/),
 };
 
@@ -242,3 +244,4 @@ ${entries.join('\n\n')}
 
 build("目四片_島言", "35_06_JA", "JA", "M+ 1p Heavy");
 build("目四片_島言", "15_06_EN", "EN", "Crushed");
+build("目四片_島言", "25_06_ZH", "ZH", "Crushed");

@@ -19,6 +19,14 @@
     letter-spacing: 0.025em;
 }
 
+.entry-word-ja[lang="zh"] {
+    /* 親見出し（中文） */
+    font-size: calc(12pt * var(--scale-tnr));
+    font-weight: bold;
+    font-family: "Crushed";
+    letter-spacing: 0.025em;
+}
+
 .entry-word-pmcp {
     /* 親見出し（PMCP） */
     font-size: calc(12pt * var(--scale));
@@ -57,7 +65,15 @@
 }
 
 .sub-entry-word-ja[lang="en"] {
-    /* 子見出し（日本語） */
+    /* 子見出し（英語） */
+    font-size: calc(9pt * var(--scale-tnr));
+    font-weight: bold;
+    font-family: "Crushed";
+    letter-spacing: 0.025em;
+}
+
+.sub-entry-word-ja[lang="zh"] {
+    /* 子見出し（中文） */
     font-size: calc(9pt * var(--scale-tnr));
     font-weight: bold;
     font-family: "Crushed";
