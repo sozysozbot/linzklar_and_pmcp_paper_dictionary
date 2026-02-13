@@ -20,6 +20,7 @@ const vivliostyleConfig = {
     '0_06_07_pmcp_map.html',
     '10_03_EN_grand_title.html',
     '10_04_EN_authors.html',
+    '10_05_EN_grand_index.html',
     '10_08_EN_linzklar_start.html',
     '10_10_EN_how_to_use_linzklar.html',
     '10_11_EN_linzklar_key_to_pronunciation.html',
