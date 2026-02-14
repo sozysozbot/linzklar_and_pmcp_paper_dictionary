@@ -1,45 +1,45 @@
 ["ail","","ail","","","名词","Ai’r (ethnicity; country)",""]
-["at","","at","","","conjunction for nouns","and",""]
+["at","","at","","","名词连词","and",""]
 ["auc","","auc","","","名词","all, everything",""]
 {"multiple":true,"word":"belpic","distinguisher":"","pmcp":"belpic","subentries":[["","","名词","play, game",""],["","","动词","to play",""],["belpicit","belpicit","及物动词","to play <i>something</i>",""]]}
-["cene","","cene","","","preverbal auxiliary verb","can <i>do</i>, be able to <i>do</i>",""]
-{"multiple":true,"word":"cet","distinguisher":"","pmcp":"cet","subentries":[["","","noun suffix","(indicates that there are many)",""],["","","preverbal auxiliary verb","quite, very",""],["cetit","cetit","及物动词","to increase <i>something</i>",""],["cetleti","cetleti","形容词","many, much, a lot of",""]]}
+["cene","","cene","","","前置助动词","can <i>do</i>, be able to <i>do</i>",""]
+{"multiple":true,"word":"cet","distinguisher":"","pmcp":"cet","subentries":[["","","后缀","(indicates that there are many)",""],["","","前置助动词","quite, very",""],["cetit","cetit","及物动词","to increase <i>something</i>",""],["cetleti","cetleti","形容词","many, much, a lot of",""]]}
 ["ci","","ci","","","名词","it, he, she, they, that",""]
 {"multiple":true,"word":"co","distinguisher":"","pmcp":"co","subentries":[["","","名词","你",""],["coleti","coleti","形容词","你的",""]]}
 ["cul","","cul","","","名词","method, tool, way",""]
-["delu","","delu","","","preverbal auxiliary verb","need to <i>do</i>, should <i>do</i>",""]
-["e","","e","","","special verb","是",""]
+["delu","","delu","","","前置助动词","need to <i>do</i>, should <i>do</i>",""]
+["e","","e","","","特殊动词","是",""]
 {"multiple":true,"word":"et","distinguisher":"","pmcp":"et","subentries":[["","","名词","other, another",""],["etleti","etleti","形容词","other, another",""]]}
 ["it","","it","","","及物动词","to do <i>something</i>",""]
-["jo","","jo","","","preposition","in, to, from, at, by, on",""]
+["jo","","jo","","","介词","in, to, from, at, by, on",""]
 ["julo","","julo","","","名词","thing, stuff",""]
 {"multiple":true,"word":"ka","distinguisher":"¹","pmcp":"ka","subentries":[["","","名词","this, these",""],["kaleti","kaleti","形容词","this, these",""]]}
 {"multiple":true,"word":"ka","distinguisher":"²","pmcp":"ka","subentries":[["kaleti","kaleti","数词","2，两，二　　Note: only used when it directly follows another numeral",""]]}
-["kije","","kije","","","postverbal auxiliary verb","(indicates the direction of an action towards the subject)",""]
+["kije","","kije","","","后置助动词","(indicates the direction of an action towards the subject)",""]
 ["kile","","kile","","","动词","来",""]
 {"multiple":true,"word":"kin","distinguisher":"","pmcp":"kin","subentries":[["","","名词","value, number, score",""],["","","动词","(in the form 〖kin jo [1]〗) the number amounts to 〖[1]〗, the number reaches 〖[1]〗",""],["kinpit","kinpit","及物动词","to count <i>something</i>",""]]}
 ["lata","","lata","","","名词","person, people",""]
 ["lauzait","","lauzait","","","及物动词","to make <i>something</i>, to create <i>something</i>",""]
-["leti","","leti","","","special conjunction","-’s (possessive marker; creates a modifying phrase)",""]
+["leti","","leti","","","特殊连词","-’s (possessive marker; creates a modifying phrase)",""]
 ["letit","","letit","","","及物动词","to have <i>something</i>, to take hold of <i>something</i>, to obtain <i>something</i>, to take <i>something</i>, to get <i>something</i>",""]
 ["luc","¹","luc","lucit","LUCIT","及物动词","to use <i>something</i>　　　　　　　　　　　　　　Note: this word is hardly ever used as an intransitive verb.",""]
 ["luc","²","luc","","","动词","to end　　　　　　　　　　　Note: this word is never used as a transitive verb.",""]
 {"multiple":true,"word":"lucuc","distinguisher":"","pmcp":"lucuc","subentries":[["","","动词","to end",""],["lucucit","lucucit","及物动词","to end <i>something</i>",""]]}
 {"multiple":true,"word":"lukup","distinguisher":"","pmcp":"lukup","subentries":[["","","名词","language",""],["","","动词","to talk, to speak",""],["lukupit","lukupit","及物动词","to say <i>something</i>, to tell <i>something</i>",""],["lukup-lukup","lukup-lukup","名词","writing, discussion, message",""]]}
-{"multiple":true,"word":"mak","distinguisher":"","pmcp":"mak","subentries":[["","","preverbal auxiliary verb","<i>do</i> again, <i>do</i> once more",""],["makleti","makleti","数词","2, two",""],["mak-mak","mak-mak","preverbal auxiliary verb","repeatedly <i>do</i>",""]]}
+{"multiple":true,"word":"mak","distinguisher":"","pmcp":"mak","subentries":[["","","前置助动词","<i>do</i> again, <i>do</i> once more",""],["makleti","makleti","数词","2, two",""],["mak-mak","mak-mak","前置助动词","repeatedly <i>do</i>",""]]}
 ["mi","","mi","","","名词","I, me",""]
-{"multiple":true,"word":"mol","distinguisher":"","pmcp":"mol","subentries":[["","","special verb","to exist, to be present<br>Note: this word is never followed by 〖leti〗 .",""],["","","postverbal auxiliary verb","be <i>do</i>ing<br>Note: this word is rarely used in Ai’r",""]]}
-{"multiple":true,"word":"molip","distinguisher":"","pmcp":"molip","subentries":[["","","special verb","to not exist, to be nonexistent, to not be present",""],["molipleti","molipleti","形容词","nonexistent, not present",""]]}
-{"multiple":true,"word":"nip","distinguisher":"","pmcp":"nip","subentries":[["","","动词","to disappear, to vanish",""],["","","preverbal auxiliary verb","not <i>do</i>",""],["","","interjection","no",""],["nipit","nipit","及物动词","to refuse <i>something</i>, to ignore <i>something</i>, to lose <i>something</i>, to remove <i>something</i>, to discard <i>something</i>",""],["nipleti","nipleti","数词","0, zero",""]]}
+{"multiple":true,"word":"mol","distinguisher":"","pmcp":"mol","subentries":[["","","特殊动词","to exist, to be present<br>Note: this word is never followed by 〖leti〗 .",""],["","","后置助动词","be <i>do</i>ing<br>Note: this word is rarely used in Ai’r",""]]}
+{"multiple":true,"word":"molip","distinguisher":"","pmcp":"molip","subentries":[["","","特殊动词","to not exist, to be nonexistent, to not be present",""],["molipleti","molipleti","形容词","nonexistent, not present",""]]}
+{"multiple":true,"word":"nip","distinguisher":"","pmcp":"nip","subentries":[["","","动词","to disappear, to vanish",""],["","","前置助动词","not <i>do</i>",""],["","","感叹词","no",""],["nipit","nipit","及物动词","to refuse <i>something</i>, to ignore <i>something</i>, to lose <i>something</i>, to remove <i>something</i>, to discard <i>something</i>",""],["nipleti","nipleti","数词","0, zero",""]]}
 ["nole","","nole","","","名词","time (in the temporal sense), occasion, (when used with a numeral, in the form 〖[1] nole〗) 〖[1]〗 times (as in ‘how many times’)",""]
 {"multiple":true,"word":"nuxep","distinguisher":"","pmcp":"nuxep","subentries":[["","","形容词","small",""],["","","名词","Nooshep Island 【小島】 (place name)",""],["nuxep-nuxep","NUXEP-NUXEP","形容词","slight, tiny, meagre",""]]}
-["o","","o","","","conjunction for nouns","or",""]
-{"multiple":true,"word":"pac","distinguisher":"","pmcp":"pac","subentries":[["","","preverbal auxiliary verb","start to <i>do</i>",""],["","","动词","to begin, to start",""],["","","名词","beginning, start",""]]}
-{"multiple":true,"word":"pan","distinguisher":"","pmcp":"pan","subentries":[["","","preverbal auxiliary verb","alone, by oneself, isolatedly",""],["panit","panit","及物动词","to unite <i>something</i>, to unify <i>something</i>",""],["panleti","panleti","数词","1, one",""],["panleti","panleti","形容词","same, identical",""]]}
-{"multiple":true,"word":"panka","distinguisher":"","pmcp":"panka","subentries":[["","","动词","to be good",""],["","","preverbal auxiliary verb","aptly, successfully, well",""],["pankaleti","pankaleti","形容词","good",""]]}
+["o","","o","","","名词连词","or",""]
+{"multiple":true,"word":"pac","distinguisher":"","pmcp":"pac","subentries":[["","","前置助动词","start to <i>do</i>",""],["","","动词","to begin, to start",""],["","","名词","beginning, start",""]]}
+{"multiple":true,"word":"pan","distinguisher":"","pmcp":"pan","subentries":[["","","前置助动词","alone, by oneself, isolatedly",""],["panit","panit","及物动词","to unite <i>something</i>, to unify <i>something</i>",""],["panleti","panleti","数词","1, one",""],["panleti","panleti","形容词","same, identical",""]]}
+{"multiple":true,"word":"panka","distinguisher":"","pmcp":"panka","subentries":[["","","动词","to be good",""],["","","前置助动词","aptly, successfully, well",""],["pankaleti","pankaleti","形容词","good",""]]}
 {"multiple":true,"word":"pemecepe","distinguisher":"","pmcp":"pemecepe","subentries":[["","","名词","Republic Union of the Eastern Islands, Pemecepe",""],["pemecepe lukup","pemecepe lukup","名词","Pemecepe Creole",""],["pemecepe lujot","pemecepe lujot","名词","Pemecepe alphabet",""]]}
-["pi","","pi","","","conjunction for sentences","and, but, and then",""]
+["pi","","pi","","","句连词","and, but, and then",""]
 ["poto","","poto","","","名词","place, location",""]
-{"multiple":true,"word":"tude","distinguisher":"","pmcp":"tude","subentries":[["","","动词","to move",""],["","","postverbal auxiliary verb","(indicates the direction of an action away from the subject)",""],["tudeit","tudeit","及物动词","to move <i>something</i>, to transfer <i>something</i>, to carry <i>something</i>",""]]}
+{"multiple":true,"word":"tude","distinguisher":"","pmcp":"tude","subentries":[["","","动词","to move",""],["","","后置助动词","(indicates the direction of an action away from the subject)",""],["tudeit","tudeit","及物动词","to move <i>something</i>, to transfer <i>something</i>, to carry <i>something</i>",""]]}
 {"multiple":true,"word":"xel","distinguisher":"","pmcp":"xel","subentries":[["xelit","XELIT","及物动词","to look at <i>something</i>, to see <i>something</i>, to watch <i>something</i>",""],["xelit tude","XELIT TUDE","及物动词","to inspect <i>something</i>",""],["xelit kije","XELIT KIJE","及物动词","to discover <i>something</i>",""]]}
 {"multiple":true,"word":"xep","distinguisher":"","pmcp":"xep","subentries":[["","","形容词","large",""],["xep u","xep u","名词","xenonen-u (name of a letter in the Lipāshe alphabet)",""],["xepit","XEPIT","动词","to enlarge, to expand",""],["xep-xep","XEP-XEP","形容词","huge, enormous, tremendous",""]]}
