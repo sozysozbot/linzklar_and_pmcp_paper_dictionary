@@ -1,15 +1,15 @@
 親見出し（日本語）	同綴見出し	親見出し（PMCP）	子見出し（日本語）	子見出し（PMCP）	品詞	語釈	品詞欄の直後に改行を強制
 ail		ail			名词	Ai’r (ethnicity; country)	
-at		at			名词连词	and	
+at		at			名词连词	和	
 auc		auc			名词	all, everything	
-belpic	*	belpic			名词	play, game	
-belpic	*	belpic			动词	to play	
+belpic	*	belpic			名词	玩儿，游戏	
+belpic	*	belpic			动词	玩儿，做游戏	
 belpic	*	belpic	belpicit	belpicit	及物动词	to play <i>something</i>	
 cene		cene			前置助动词	can <i>do</i>, be able to <i>do</i>	
 cet	*	cet			后缀	(indicates that there are many)	
 cet	*	cet			前置助动词	quite, very	
 cet	*	cet	cetit	cetit	及物动词	to increase <i>something</i>	
-cet	*	cet	cetleti	cetleti	形容词	many, much, a lot of	
+cet	*	cet	cetleti	cetleti	形容词	许多的，大量的	
 ci		ci			名词	it, he, she, they, that	
 co	*	co			名词	你	
 co	*	co	coleti	coleti	形容词	你的	
@@ -18,33 +18,33 @@ delu		delu			前置助动词	need to <i>do</i>, should <i>do</i>
 e		e			特殊动词	是	
 et	*	et			名词	other, another	
 et	*	et	etleti	etleti	形容词	other, another	
-it		it			及物动词	to do <i>something</i>	
+it		it			及物动词	做	
 jo		jo			介词	in, to, from, at, by, on	
 julo		julo			名词	thing, stuff	
-ka	*¹	ka			名词	this, these	
-ka	*¹	ka	kaleti	kaleti	形容词	this, these	
+ka	*¹	ka			名词	这	
+ka	*¹	ka	kaleti	kaleti	形容词	这个	
 ka	*²	ka	kaleti	kaleti	数词	2，两，二　　Note: only used when it directly follows another numeral	
 kije		kije			后置助动词	(indicates the direction of an action towards the subject)	
 kile		kile			动词	来	
-kin	*	kin			名词	value, number, score	
+kin	*	kin			名词	值，数量，比分	
 kin	*	kin			动词	(in the form 〖kin jo [1]〗) the number amounts to 〖[1]〗, the number reaches 〖[1]〗	
 kin	*	kin	kinpit	kinpit	及物动词	to count <i>something</i>	
-lata		lata			名词	person, people	
-lauzait		lauzait			及物动词	to make <i>something</i>, to create <i>something</i>	
-leti		leti			特殊连词	-’s (possessive marker; creates a modifying phrase)	
+lata		lata			名词	人	
+lauzait		lauzait			及物动词	制造	
+leti		leti			特殊连词	的	
 letit		letit			及物动词	to have <i>something</i>, to take hold of <i>something</i>, to obtain <i>something</i>, to take <i>something</i>, to get <i>something</i>	
 luc	¹	luc	lucit	LUCIT	及物动词	to use <i>something</i>　　　　　　　　　　　　　　Note: this word is hardly ever used as an intransitive verb.	
 luc	²	luc			动词	to end　　　　　　　　　　　Note: this word is never used as a transitive verb.	
-lucuc	*	lucuc			动词	to end	
-lucuc	*	lucuc	lucucit	lucucit	及物动词	to end <i>something</i>	
-lukup	*	lukup			名词	language	
-lukup	*	lukup			动词	to talk, to speak	
-lukup	*	lukup	lukupit	lukupit	及物动词	to say <i>something</i>, to tell <i>something</i>	
+lucuc	*	lucuc			动词	结束	
+lucuc	*	lucuc	lucucit	lucucit	及物动词	结束	
+lukup	*	lukup			名词	语言	
+lukup	*	lukup			动词	讲话，谈话，讨论	
+lukup	*	lukup	lukupit	lukupit	及物动词	说，讲，告诉	
 lukup	*	lukup	lukup-lukup	lukup-lukup	名词	writing, discussion, message	
 mak	*	mak			前置助动词	<i>do</i> again, <i>do</i> once more	
-mak	*	mak	makleti	makleti	数词	2, two	
-mak	*	mak	mak-mak	mak-mak	前置助动词	repeatedly <i>do</i>	
-mi		mi			名词	I, me	
+mak	*	mak	makleti	makleti	数词	2，两，二	
+mak	*	mak	mak-mak	mak-mak	前置助动词	反复{+动词}	
+mi		mi			名词	我	
 mol	*	mol			特殊动词	to exist, to be present<br>Note: this word is never followed by 〖leti〗 .	
 mol	*	mol			后置助动词	be <i>do</i>ing<br>Note: this word is rarely used in Ai’r	
 molip	*	molip			特殊动词	to not exist, to be nonexistent, to not be present	
@@ -53,7 +53,7 @@ nip	*	nip			动词	to disappear, to vanish
 nip	*	nip			前置助动词	not <i>do</i>	
 nip	*	nip			感叹词	no	
 nip	*	nip	nipit	nipit	及物动词	to refuse <i>something</i>, to ignore <i>something</i>, to lose <i>something</i>, to remove <i>something</i>, to discard <i>something</i>	
-nip	*	nip	nipleti	nipleti	数词	0, zero	
+nip	*	nip	nipleti	nipleti	数词	0，零	
 nole		nole			名词	time (in the temporal sense), occasion, (when used with a numeral, in the form 〖[1] nole〗) 〖[1]〗 times (as in ‘how many times’)	
 nuxep	*	nuxep			形容词	small	
 nuxep	*	nuxep			名词	Nooshep Island 【小島】 (place name)	
@@ -64,16 +64,16 @@ pac	*	pac			动词	to begin, to start
 pac	*	pac			名词	beginning, start	
 pan	*	pan			前置助动词	alone, by oneself, isolatedly	
 pan	*	pan	panit	panit	及物动词	to unite <i>something</i>, to unify <i>something</i>	
-pan	*	pan	panleti	panleti	数词	1, one	
+pan	*	pan	panleti	panleti	数词	1，一	
 pan	*	pan	panleti	panleti	形容词	same, identical	
 panka	*	panka			动词	to be good	
 panka	*	panka			前置助动词	aptly, successfully, well	
 panka	*	panka	pankaleti	pankaleti	形容词	good	
-pemecepe	*	pemecepe			名词	Republic Union of the Eastern Islands, Pemecepe	
-pemecepe	*	pemecepe	pemecepe lukup	pemecepe lukup	名词	Pemecepe Creole	
+pemecepe	*	pemecepe			名词	东诸岛共和国联合	
+pemecepe	*	pemecepe	pemecepe lukup	pemecepe lukup	名词	东岛通用语	
 pemecepe	*	pemecepe	pemecepe lujot	pemecepe lujot	名词	Pemecepe alphabet	
 pi		pi			句连词	and, but, and then	
-poto		poto			名词	place, location	
+poto		poto			名词	地方，位置，地点	
 tude	*	tude			动词	to move	
 tude	*	tude			后置助动词	(indicates the direction of an action away from the subject)	
 tude	*	tude	tudeit	tudeit	及物动词	to move <i>something</i>, to transfer <i>something</i>, to carry <i>something</i>	
