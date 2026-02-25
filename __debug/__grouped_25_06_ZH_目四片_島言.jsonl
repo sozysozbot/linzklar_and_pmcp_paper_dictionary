@@ -3,7 +3,7 @@
 ["auc","","auc","","","名词","all, everything",""]
 {"multiple":true,"word":"belpic","distinguisher":"","pmcp":"belpic","subentries":[["","","名词","玩儿，游戏",""],["","","动词","玩儿，做游戏",""],["belpicit","belpicit","及物动词","to play <i>something</i>",""]]}
 ["cene","","cene","","","前置助动词","can <i>do</i>, be able to <i>do</i>",""]
-{"multiple":true,"word":"cet","distinguisher":"","pmcp":"cet","subentries":[["","","后缀","(indicates that there are many)",""],["","","前置助动词","quite, very",""],["cetit","cetit","及物动词","to increase <i>something</i>",""],["cetleti","cetleti","形容词","许多的，大量的",""]]}
+{"multiple":true,"word":"cet","distinguisher":"","pmcp":"cet","subentries":[["","","后缀","(indicates that there are many)",""],["","","前置助动词","非常",""],["cetit","cetit","及物动词","to increase <i>something</i>",""],["cetleti","cetleti","形容词","许多的，大量的",""]]}
 ["ci","","ci","","","名词","it, he, she, they, that",""]
 {"multiple":true,"word":"co","distinguisher":"","pmcp":"co","subentries":[["","","名词","你",""],["coleti","coleti","形容词","你的",""]]}
 ["cul","","cul","","","名词","method, tool, way",""]
@@ -30,7 +30,7 @@
 ["mi","","mi","","","名词","我",""]
 {"multiple":true,"word":"mol","distinguisher":"","pmcp":"mol","subentries":[["","","特殊动词","to exist, to be present<br>Note: this word is never followed by 〖leti〗 .",""],["","","后置助动词","be <i>do</i>ing<br>Note: this word is rarely used in Ai’r",""]]}
 {"multiple":true,"word":"molip","distinguisher":"","pmcp":"molip","subentries":[["","","特殊动词","to not exist, to be nonexistent, to not be present",""],["molipleti","molipleti","形容词","nonexistent, not present",""]]}
-{"multiple":true,"word":"nip","distinguisher":"","pmcp":"nip","subentries":[["","","动词","to disappear, to vanish",""],["","","前置助动词","not <i>do</i>",""],["","","感叹词","no",""],["nipit","nipit","及物动词","to refuse <i>something</i>, to ignore <i>something</i>, to lose <i>something</i>, to remove <i>something</i>, to discard <i>something</i>",""],["nipleti","nipleti","数词","0，零",""]]}
+{"multiple":true,"word":"nip","distinguisher":"","pmcp":"nip","subentries":[["","","动词","to disappear, to vanish",""],["","","前置助动词","不{+动词}，没{+动词}",""],["","","感叹词","no",""],["nipit","nipit","及物动词","to refuse <i>something</i>, to ignore <i>something</i>, to lose <i>something</i>, to remove <i>something</i>, to discard <i>something</i>",""],["nipleti","nipleti","数词","0，零",""]]}
 ["nole","","nole","","","名词","time (in the temporal sense), occasion, (when used with a numeral, in the form 〖[1] nole〗) 〖[1]〗 times (as in ‘how many times’)",""]
 {"multiple":true,"word":"nuxep","distinguisher":"","pmcp":"nuxep","subentries":[["","","形容词","small",""],["","","名词","Nooshep Island 【小島】 (place name)",""],["nuxep-nuxep","NUXEP-NUXEP","形容词","slight, tiny, meagre",""]]}
 ["o","","o","","","名词连词","or",""]

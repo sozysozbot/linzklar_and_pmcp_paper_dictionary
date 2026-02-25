@@ -67,15 +67,20 @@
 
         .phonetics-col .row {
             display: grid;
-            grid-template-columns: 1.3em 1fr; /* symbol; description */
+            grid-template-columns: 1.5em 2em 1fr; /* symbol; ipa; description */
             column-gap: 0.6em;
             margin: 0.12em 0;
         }
 
-        .pron-sample-column {
+        .ps-column {
             display: inline-block;
-            width: 1.3em;              
+            width: 1.5em;              
             font-variant-ligatures: none; 
+        }
+
+        .ipa-column {
+            display: inline-block;
+            width: 2em;
         }
 
         .row {
@@ -92,6 +97,27 @@
         .row2 {
             padding: 0.15em 0;
         }
+
+
+        .row2 .ps-column {
+            width: 3em;
+        }
+
+        .row3 {
+            padding: 0.15em 0;
+        }
+
+        .phonetics-col .row3 {
+            display: grid;
+            grid-template-columns: 1.5em 4em 1fr; /* symbol; ipa; description */
+            column-gap: 0.6em;
+            margin: 0.12em 0;
+        }
+
+        .row3 .ipa-column {
+            width: 4em;
+        }
+
 
         .row.gap {
             height: 1em;
@@ -110,9 +136,13 @@
             }
         }
 
-        .pron-sample-column {
-            font-weight: bold;
+        .ps-column {
             font-family: "Times New Roman";
+            line-break: strict;
+        }
+
+        .ipa-column {
+            font-family: 'Times New Roman';
             line-break: strict;
         }
 
@@ -132,59 +162,59 @@
     <div class="phonetics-two-col">
   <section class="phonetics-col">
     <h4>元音</h4>
-    <div class="row"><span class="pron-sample-column" lang="en">a</span> <span>as in f<b><u>a</u></b>ther</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">e</span> <span>as in f<b><u>u</u></b>rry</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">i</span> <span>as in f<b><u>ee</u></b>d</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">u</span> <span>as in f<b><u>oo</u></b>d</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">y</span> <span>as in French f<b><u>u</u></b>me</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">ai</span> <span>as in <b><u class="descender">eye</u></b></span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">au</span> <span>as in c<b><u>ow</u></b></span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">ei</span> <span>as in g<b><u>ai</u></b>n</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">o</span> <span>as in f<b><u>oa</u></b>m</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>a</b> </span><span class="ipa-column">[a]</span> <span>啊</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>e</b> </span><span class="ipa-column">[ǝ]</span> <span>饿</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>i</b> </span><span class="ipa-column">[i]</span> <span>衣</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>u</b> </span><span class="ipa-column">[u]</span> <span>乌</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>y</b> </span><span class="ipa-column">[y]</span> <span>鱼</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>ai</b></span><span class="ipa-column"> [aj]</span> <span>爱</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>au</b></span><span class="ipa-column"> [aw]</span> <span>奥</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>ei</b></span><span class="ipa-column"> [ej]</span> <span>英语 <b><u>A</u></b></span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>o</b></span><span class="ipa-column"> [ow]</span> <span>欧</span></div>
 
     <div class="row gap"></div>
 
-    <div class="row"><span class="pron-sample-column" lang="en">ia</span> <span>as in <b><u class="descender">ya</u></b>rd</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">ie</span> <span>as in <b><u class="descender">ye</u></b>ll</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">iau</span> <span>as in <b><u class="descender">yow</u></b>l</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">iei</span> <span>as in <b><u class="descender">yay</u></b></span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">io</span> <span>as in <b><u class="descender">yo</u></b>ke</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>ia</b></span> <span class="ipa-column">[ja]</span><span>压</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>ie</b></span> <span class="ipa-column">[je]</span><span>夜</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>iau</b></span><span class="ipa-column">[jaw]</span> <span>要</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>iei</b></span><span class="ipa-column">[jej]</span> <span>英语 <b><u class="descender">yay</u></b></span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>io</b></span><span class="ipa-column">[jow]</span><span>油</span></div>
     
     <div class="row gap"></div>
 
-    <div class="row"><span class="pron-sample-column" lang="en">ua</span> <span>as in s<b><u>ua</u></b>ve</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">ue</span> <span>as in <b><u>wo</u></b>rry</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">ui</span> <span>as in <b><u>wee</u></b>d, g<b><u class="descender">ooey</u></b></span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">uai</span> <span>as in <b><u>wi</u></b>de</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">uau</span> <span>as in <b><u>wow</u></b></span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">uo</span> <span>as in <b><u>woe</u></b></span></div>
+    <div class="row3"><span class="ps-column" lang="en"><b>ua</b></span> <span class="ipa-column">[wa]</span><span>娃</span></div>
+    <div class="row3"><span class="ps-column" lang="en"><b>ue</b></span> <span class="ipa-column">[wǝ]</span><span>w+饿</div>
+    <div class="row3"><span class="ps-column" lang="en"><b>ui</b></span> <span class="ipa-column">[wi], [uj]</span><span>w+衣 / 乌+y</span></div>
+    <div class="row3"><span class="ps-column" lang="en"><b>uai</b></span><span class="ipa-column">[waj]</span> <span>外</span></div>
+    <div class="row3"><span class="ps-column" lang="en"><b>uau</b></span><span class="ipa-column">[waw]</span> <span>英语 <b><u>wow</u></b></span></div>
+    <div class="row3"><span class="ps-column" lang="en"><b>uo</b></span> <span class="ipa-column">[wow]</span><span>英语 <b><u>woe</u></b></span></div>
 
   </section>
 
   <section class="phonetics-col">
     <h4>辅音</h4>
-    <div class="row"><span class="pron-sample-column" lang="en">b</span> <span>as in <b><u>b</u></b>ean</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">c</span> <span>as in <b><u>c</u></b>inema</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">d</span> <span>as in <b><u>d</u></b>og</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">g</span> <span>as in <b><u class="descender">g</u></b>one</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">h</span> <span>as in <b><u>h</u></b>arm</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">k</span> <span>as in <b><u>k</u></b>aya<b><u>k</u></b></span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">l</span> <span>as in bu<b><u>tt</u></b>er (<i>with flapping</i>)</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">m</span> <span>as in <b><u>m</u></b>a’a<b><u>m</u></b></span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">n</span> <span>as in <b><u>kn</u></b>ow<b><u>n</u></b></span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">p</span> <span>as in <b><u class="descender">p</u></b>ee<b><u class="descender">p</u></b></span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">s</span> <span>as in <b><u>z</u></b>ero</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">t</span> <span>as in <b><u>t</u></b>eapo<b><u>t</u></b></span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">x</span> <span>as in <b><u>sh</u></b>ow</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">z</span> <span>as in ea<b><u>ts</u></b>, pi<b><u>zz</u></b>a</span></div>
-    <div class="row"><span class="pron-sample-column" lang="en">ź</span> <span>as in <b><u>ch</u></b>urch</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>b</b> </span><span class="ipa-column">[b]</span> <span>英语 <b><u>b</u></b>ean</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>c</b> </span><span class="ipa-column">[s]</span> <span>思</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>d</b> </span><span class="ipa-column">[d]</span> <span>英语 <b><u>d</u></b>og</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>g</b> </span><span class="ipa-column">[g]</span> <span>英语 <b><u class="descender">g</u></b>one</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>h</b> </span><span class="ipa-column">[h]</span> <span>喝</div>
+    <div class="row"><span class="ps-column" lang="en"><b>k</b> </span><span class="ipa-column">[kʰ]</span> <span>颗</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>l</b> </span><span class="ipa-column">[ɾ]</span> <span>美式英语 bu<b><u>tt</u></b>er</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>m</b> </span><span class="ipa-column">[m]</span> <span>木</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>n</b> </span><span class="ipa-column">[n]</span> <span>呢</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>p</b> </span><span class="ipa-column">[pʰ]</span> <span> 破</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>s</b> </span><span class="ipa-column">[z]</span> <span> 英语 <b><u>z</u></b>ero</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>t</b> </span><span class="ipa-column">[tʰ]</span> <span>  特</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>x</b> </span><span class="ipa-column">[ɕ]</span> <span> 西</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>z</b> </span><span class="ipa-column">[t͡sʰ]</span> <span> 词</span></div>
+    <div class="row"><span class="ps-column" lang="en"><b>ź</b> </span><span class="ipa-column">[t͡ɕʰ]</span> <span> 七</span></div>
 
     <div class="row gap"></div>
 
     <h4>声调</h4>
-    <div class="row2"><span class="pron-sample-column" lang="en">1</span> <span>long; pitched high</span></div>
-    <div class="row2"><span class="pron-sample-column" lang="en">2</span> <span>long; pitched low</span></div>
-    <div class="row2"><span class="pron-sample-column" lang="en" style="font-weight: normal;" >(none)</span> <span>short; mid-level pitch</span></div>
+    <div class="row2"><span class="ps-column" lang="en"><b>1</b></span> <span>高平调</span></div>
+    <div class="row2"><span class="ps-column" lang="en"><b>2</b></span> <span>低平调</span></div>
+    <div class="row2"><span class="ps-column" lang="zh" style="font-weight: normal; font-family: 'Source Han Serif'" >(不标)</span> <span>中促调</span></div>
 
 
   </section>
