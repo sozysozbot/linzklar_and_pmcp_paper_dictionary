@@ -37,6 +37,7 @@ const idiomatic_multichar_pronunciation_table = fs.readFileSync("IDIOMATIC_MULTI
 let LINZKLARS_IN_ROUNDED = "";
 
 build("11_01", "EN", "目四片_清字");
+build("21_01", "ZH", "目四片_清字");
 build("31_01", "JA", "目四片_清字");
 
 {
