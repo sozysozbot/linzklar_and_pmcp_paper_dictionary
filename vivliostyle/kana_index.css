@@ -60,7 +60,7 @@ a {
     size: 128mm 182mm
         /* JIS B6 */
     ;
-    margin: 4% 10% 3% 10%;
+    margin: 4% 10% 2.5% 10%;
 
     @top-center {
         content: counter(page);
