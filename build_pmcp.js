@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { kana_words } from './to_kana.js'
 
 /** 
 Replace the sequence of entries
@@ -151,6 +152,28 @@ ${subentries.map(subentry => {
 </div>`;
 }
 
+function validateKanaTranscription(grouped_entry) {
+    function inspect({ pmcp, actual_kana }) {
+        if (pmcp === "" && actual_kana === "") return;
+        const expected = kana_words(pmcp).replaceAll(/·/g, " ")
+        if (expected !== actual_kana) {
+            console.warn(`expected "${expected}" from "${pmcp}",  but got "${actual_kana}"`)
+        }
+    }
+    if (grouped_entry.multiple) {
+        // {"multiple":true,"word":"ニㇷ゚","distinguisher":"","pmcp":"nip","subentries":[["","","動詞","消える、なくなる",""],["","","前置助動詞","～ない",""],["","","間投詞","いいえ",""],["ニピㇳ","nipit","他動詞","～を拒む、～を無視する、～をなくす、～を取り除く、～を捨てる",""],["ニㇷ゚レティ","nipleti","数詞","0個の",""]]}
+        inspect({ pmcp: grouped_entry.pmcp, actual_kana: grouped_entry.word });
+        for (const subentry of grouped_entry.subentries) {
+            inspect({ pmcp: subentry[1], actual_kana: subentry[0] })
+        }
+    } else {
+        // either ["クネ","","kune","クネレティ","kuneleti","形容詞","見覚えがある、聞きなれている",""]
+        // or ["ニサ","","nica","","","名詞","誤り、嘘、間違い",""]
+        inspect({ pmcp: grouped_entry[2], actual_kana: grouped_entry[0] });
+        inspect({ pmcp: grouped_entry[4], actual_kana: grouped_entry[3] })
+    }
+}
+
 
 // --------------------------------------------------
 // | main ↓
@@ -170,6 +193,7 @@ function build(行, file_name_prefix) {
 
 
     const grouped = group_asterisk(entries_array);
+    grouped.map(validateKanaTranscription)
     fs.writeFileSync(`__debug/__grouped_${行}.jsonl`, grouped.map(JSON.stringify).join('\n'), { encoding: 'utf-8' });
 
     const entries = grouped
